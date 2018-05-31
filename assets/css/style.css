@@ -35,6 +35,16 @@ a
     clear: both;
 }
 
+.text-theme-color1
+{
+	color: rgb(186, 68, 9);
+}
+
+.text-theme-color2
+{
+	color: rgb(214, 207, 203);
+}
+
 .header
 {
 	background-color: rgb(249, 249, 249);
@@ -71,8 +81,33 @@ a
 {
 	width: 150px;
 	height: 150px;
-	border-radius: 50%;
+	/*border-radius: 50%;*/
+	z-index: 3;
 }
+
+.avatar-glow-inner
+{
+	width: 200px;
+	height: 200px;
+	/*border-radius: 50%;*/
+	background-color: red;
+	/*padding: 10px;*/
+	z-index: 2;
+	text-align: center;
+}
+
+.avatar-glow
+{
+	width: 250px;
+	height: 250px;
+	/*border-radius: 50%;*/
+	background-color: blue;
+	/*padding: 10px;*/
+	z-index: 1;
+	text-align: center;
+}
+
+
 
 #more-about-me:visited
 {
@@ -82,12 +117,12 @@ a
 
 .about
 {
-	background-color: rgb(249, 249, 249);
+	background-color: rgb(86, 80, 77);
 }
 
 .about-intro
 {
-	background-color: rgb(252, 252, 252);
+	background-color: rgb(188, 114, 77);
 	padding: 5% 5% 60px;
 	text-align: center;
 }
@@ -104,7 +139,7 @@ a
 	border: 1px solid #e0e5e1;
 	border-radius: 50px 50px 50px 50px;
 	padding: 5% 0;
-	background-color: #8a8e92;
+	background-color: rgb(183, 177, 174);
 }
 
 .skills-content
@@ -120,7 +155,7 @@ a
 
 .list-group-item
 {
-	background-color: #8a8e92;
+	background-color: rgb(183, 177, 174);
 	border-left: none;
 	border-right: none;
 
@@ -128,7 +163,7 @@ a
 
 .projects
 {
-	background-color: #474f43;
+	background-color: rgb(188, 114, 77);
 	padding: 20px;
 }
 
@@ -174,7 +209,7 @@ a
 
 .footer
 {
-	background-color: gray;
+	background-color: rgb(86, 80, 77);
 }
 
 .social-links
