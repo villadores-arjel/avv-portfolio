@@ -18,7 +18,8 @@ p
 
 h1, h2, h3, h4, h5, h6
 {
-	font-family: 'Varela Round', sans-serif;
+	/*font-family: 'Varela Round', sans-serif;*/
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 a
@@ -36,7 +37,7 @@ a
 
 .header
 {
-	background-color: #4f5956;
+	background-color: rgb(249, 249, 249);
 	margin-bottom: 47px;
 	padding: 0 15px;
 }
@@ -60,7 +61,10 @@ a
 .banner
 {
 	min-height: 100vh;
-	background-color: #506860;
+	/*background-color: rgba(85, 182, 237, 0.5)*/
+	background-image: url(https://picsum.photos/500);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .avatar-img
@@ -78,12 +82,12 @@ a
 
 .about
 {
-	background-color: #8a8e92;
+	background-color: rgb(249, 249, 249);
 }
 
 .about-intro
 {
-	background-color: #6d7568;
+	background-color: rgb(252, 252, 252);
 	padding: 5% 5% 60px;
 	text-align: center;
 }
