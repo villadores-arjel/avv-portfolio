@@ -12,14 +12,14 @@
 		<!-- font awesome -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 		<!-- google fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display" rel="stylesheet">
 		<!-- favicon -->
 		<link rel="icon" type="image/gif/png" href="fab-icon.png">
 	</head>
 	<body>
 		<main class="container-fluid">
 			<header class="row header fixed-top">
-				<nav id="navbar" class="col-lg-12 navbar navbar-expand-lg navbar-light">
+				<nav id="navbar" class="col-lg-12 navbar navbar-expand-lg bg-theme1">
 					  <a class="navbar-brand" href="#">My Portfolio</a>
 
 					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,21 +64,23 @@
 				</nav>
 			</header>
 				
-			<section id="home" class="row banner text-theme-color1">
+			<section id="home" class="row banner text-theme-color2">
 				<div class="col-md-12 d-flex flex-column justify-content-center align-items-center">
-					<h1>Hi I'm Jel</h1>
-					<h3>I think....I code...I create something....AWESOME</h3>
+					<h3>Hi I'm Jel</h3>
+					<h4>I think....I code...</h4>
+					<h4>I create something...</h4>
+					<h2>AWESOME</h2>
 				</div>
-				<div class="col-md-12 d-flex d-xl-block justify-content-center">
-					<div class="avatar row">
-						<div class="avatar-glow">
-							<div class="avatar-glow-inner">
+				<div class="col-md-12 avatar d-flex flex-column justify-content-center align-items-center">
+					<div class="row">
+						<div class="avatar-glow d-flex flex-column justify-content-center align-items-center">
+							<div class="avatar-glow-inner d-flex flex-column justify-content-center align-items-center">
 								<img class="avatar-img" src="https://picsum.photos/200" />
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-12 d-flex d-xl-none justify-content-center align-items-center">
+				<div class="col-md-12 d-flex d-lg-none justify-content-center align-items-center">
 					<button class="btn btn-secondary">
 						<a id="more-about-me" href="#about"><i class="fas fa-arrow-down"> More about me</i></a>
 					</button>
@@ -106,31 +108,138 @@
 									<h2><i class="fas fa-code"></i></h2>
 									<h5>Programming Languages</h5>
 									<ul class="list-group">
-									  <li class="list-group-item">HTML 5</li>
-									  <li class="list-group-item">CSS 3</li>
-									  <li class="list-group-item">JAVA</li>
-									  <li class="list-group-item">JAVASCRIPT</li>
-									  <li class="list-group-item">PHP</li>
+									  <li class="list-group-item d-flex flex-row">
+									  	<div class="skill">HTML</div>
+									  	<div class="badge badge-pill badge-align">
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  	</div>
+									  </li>
+									  <li class="list-group-item d-flex flex-row">
+									  <div class="skill">CSS</div>
+									  	<div class="badge badge-pill badge-align">
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  	</div>
+									  </li>
+									  <li class="list-group-item d-flex flex-row">
+									 <div class="skill">JAVA</div>
+									  	<div class="badge badge-pill badge-align">
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  	</div>
+									  </li>
+									  <li class="list-group-item d-flex flex-row">
+									  	<div class="skill">JAVASCRIPT</div>
+									  	<div class="badge badge-pill badge-align">
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  	</div>
+									  </li>
+									  <li class="list-group-item d-flex flex-row">
+									  <div class="skill">PHP</div>
+									  	<div class="badge badge-pill badge-align">
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  	</div>
+									  </li>
 									</ul>
 								</div>
 								<div id="skills-content-center" class="skills-content col-lg-4 d-flex flex-column align-items-center">
 									<h2><i class="fas fa-wrench"></i></h2>
 									<h5>IDE and Version Control</h5>
 									<ul class="list-group">
-									  <li class="list-group-item">ECLIPSE</li>
-									  <li class="list-group-item">SUBLIME TEXT</li>
-									  <li class="list-group-item">GIT</li>
+									  <li class="list-group-item d-flex flex-row">
+									  <div class="skill">ECLIPSE</div>
+									  	<div class="badge badge-pill badge-align">
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  	</div>
+									  </li>
+									  <li class="list-group-item d-flex flex-row">
+									  <div class="skill">SUBLIME</div>
+									  	<div class="badge badge-pill badge-align">
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  	</div>
+									  </li>
+									  <li class="list-group-item d-flex flex-row">
+									  <div class="skill">GIT</div>
+									  	<div class="badge badge-pill badge-align">
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  	</div>
+									  </li>
 									</ul>
 								</div>
 								<div class="skills-content col-lg-4 d-flex flex-column align-items-center">
 									<h2><i class="fas fa-database"></i></h2>
 									<h5>Databases and Frameworks</h5>
 									<ul class="list-group">
-									  <li class="list-group-item">SPRING</li>
-									  <li class="list-group-item">LARAVEL</li>
-									  <li class="list-group-item">BOOTSTRAP 4</li>
-									  <li class="list-group-item">ORACLE SQL</li>
-									  <li class="list-group-item">MY SQL</li>
+									  <li class="list-group-item d-flex flex-row">
+									  <div class="skill">SPRING</div>
+									  	<div class="badge badge-pill badge-align">
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  	</div>
+									  </li>
+									  <li class="list-group-item d-flex flex-row">
+									  <div class="skill">LARAVEL</div>
+									  	<div class="badge badge-pill badge-align">
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  	</div>
+									  </li>
+									  <li class="list-group-item d-flex flex-row">
+									  <div class="skill">BOOTSTRAP</div>
+									  	<div class="badge badge-pill badge-align">
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  	</div>
+									  </li>
+									  <li class="list-group-item d-flex flex-row">
+									  <div class="skill">SQL</div>
+									  	<div class="badge badge-pill badge-align">
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  		<i class="fas fa-trophy text-light"></i>
+									  	</div>
+									  </li>
 									</ul>
 								</div>
 					  		</div>
@@ -145,48 +254,24 @@
 				</div>
 				<div class="col-md-12">
 					<ul class="row project-list d-flex justify-content-center align-items-center">
-						<li class="col-lg-3 offset-lg-1 col-md-3 offset-md-2 project project-img1">
+						<li class="col-lg-3 offset-lg-1 col-md-3 offset-md-2 project">
+							<a href=""><img class="w-100" src="assets/images/ivfc-website.png"></a>
 							<h5>Project 1</h5>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua.</p>
-							<a href="">Visit Site</a>
 						</li>
-						<li class="col-lg-3 offset-lg-1 col-md-3 offset-md-2 project project-img2">
-							<h5>Project 2</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua.</p>
-							<a href="">Visit Site</a>
-						</li>
-						<li class="col-lg-3 offset-lg-1 col-md-3 offset-md-2 project project-img3">
-							<h5>Project 3</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua.</p>
-							<a href="">Visit Site</a>
-						</li>
-						<!-- <li class="col-lg-3 offset-lg-1 col-md-3 offset-md-2 project project-img4">
-							<h3>Project 4</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua.</p>
-							<a href="">Visit Site</a>
-						</li>
-						<li class="col-lg-3 offset-lg-1 col-md-3 offset-md-2 project project-img5">
-							<h3>Project 5</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua.</p>
-							<a href="">Visit Site</a>
-						</li> -->
 					</ul>
 				</div>
 				
 			</section> <!-- end projects -->
 
-			<footer id="footer" class="footer row">
+			<footer id="footer" class="bg-theme1 row">
 				<div class="col-md-12 social-links">
-					<a href="https://gitlab.com/villadores.arjel" target="_blank"><i class="fab fa-gitlab"></i></a>
-					<a href="https://github.com/villadores-arjel" target="_blank"><i class="fab fa-github"></i></a>
-					<a href="mailto:villadores.arjel@gmail.com" target="_blank"><i class="fab fa-google-plus-g fa-lg"></i> </a>
-					<a href="https://www.facebook.com/jell.transport.9" target="_blank"><i class="fab fa-facebook-square"></i></a>
-					<a href="https://www.linkedin.com/in/arjel-villadores-892846160/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+					<a href="https://gitlab.com/villadores.arjel" target="_blank"><i class="fab fa-gitlab text-orange"></i></a>
+					<a href="https://github.com/villadores-arjel" target="_blank"><i class="fab fa-github text-secondary"></i></a>
+					<a href="mailto:villadores.arjel@gmail.com" target="_blank"><i class="fab fa-google-plus-g fa-lg text-danger"></i> </a>
+					<a href="https://www.facebook.com/jell.transport.9" target="_blank"><i class="fab fa-facebook-square text-primary"></i></a>
+					<a href="https://www.linkedin.com/in/arjel-villadores-892846160/" target="_blank"><i class="fab fa-linkedin-in text-primary"></i></a>
 				</div>
 				<div id="copyright" class="col-md-12 d-flex flex-column justify-content-center align-items-center">
 					<small>Copyright &copy; 2018 | Arjel Villadores</small>
@@ -202,6 +287,13 @@
 
 	    <!-- external bootstrap js -->
 	    <script type="text/javascript" src="assets/bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
+
+	    <!-- smooth scroll -->
+	    <script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
+
+	    <script>
+	    	var scroll = new SmoothScroll('a[href*="#"]');
+	    </script>
 
 	</body>
 </html>
