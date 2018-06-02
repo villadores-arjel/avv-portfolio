@@ -12,7 +12,7 @@ p
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 0px;
 }
 
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6
 a
 {
 	text-decoration: none;
-	color: #fff; /*white*/
+	color: rgb(214, 207, 203); /*white*/
 }
 
 .text-orange
@@ -41,29 +41,38 @@ a
 
 .text-theme-color1
 {
-	color: rgb(186, 68, 9);
+	color: rgb(186, 68, 9); /*orange*/
 }
 
 .text-theme-color2
 {
-	color: rgb(214, 207, 203);
+	color: rgb(214, 207, 203); /*gray*/
+}
+
+.text-theme-color3
+{
+	color: rgb(242, 239, 239); /*dark gray*/
 }
 
 .bg-theme1
 {
-	background-color: rgb(86, 80, 77);
+	background-color: rgb(86, 80, 77); /*gray*/
 }
 
 .bg-theme2
 {
-	background-color: rgb(188, 114, 77);
+	background-color: rgb(188, 114, 77); /*orange*/
 }
 
-.header
+.bg-theme3
 {
-	background-color: rgb(249, 249, 249);
-	margin-bottom: 47px;
-	padding: 0 15px;
+	background-color: rgb(183, 177, 174);
+}
+
+.navbar /*override navbag padding*/
+{
+	padding: 1% 40px;
+	z-index: 1043;
 }
 
 .navbar-toggler-icon /*override bg of navbar toggler-icon*/
@@ -71,17 +80,43 @@ a
 	background-image: url(../images/navbar-icon.png);
 }
 
-#navbar /*override navbag padding*/
+.navbar-brand:hover
 {
-	padding: 1% 3%;
-	z-index: 1043;
+	color: rgb(214, 207, 203);
+}
+
+.active, .nav-link:hover, .nav-link:focus /*.nav-link.active*/
+{
+	background-color: rgb(188, 114, 77);
+	border: 1px solid white ;
+	border-radius: 12px;
+	width: 120px;
+	text-align: center;
+	color: rgb(214, 207, 203);
 }
 
 .banner
 {
 	min-height: 100vh;
-	background-color: #ff9575;
-	padding: 5%;
+	background-image: url(../images/banner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+}
+
+.banner-wrapper
+{
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	background-color: rgba(188, 114, 77, 0.5);
+	padding: 10vh 5%;
+}
+
+.avatar
+{
+	padding: 3% 0;
 }
 
 .avatar-img
@@ -97,9 +132,7 @@ a
 	width: 170px;
 	height: 170px;
 	border-radius: 50%;
-	background-color: red;
 	z-index: 2;
-	text-align: center;
 }
 
 .avatar-glow
@@ -107,71 +140,57 @@ a
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	background-color: blue;
 	z-index: 1;
-	text-align: center;
 }
 
-#more-about-me:visited
+.more-about
 {
-	text-decoration: none;
-	color: #fff; /*white*/
+	position: absolute;
+	bottom: 10vh;
+	margin: 0 -5%;
 }
 
-.about
+.btn-more-about, .btn-more-about a:visited
 {
 	background-color: rgb(86, 80, 77);
+	text-decoration: none;
+	padding: 4%;
+	color: rgb(242, 239, 239);
 }
 
 .about-intro
 {
-	background-color: rgb(188, 114, 77);
-	padding: 5% 5% 60px;
+	padding: 5% 5% 100px;
 	text-align: center;
 }
 
-.skills
+.about-intro>p
 {
-	padding: 0 5%;
-	position: relative;
-	top: -60px;
+	text-align: center;
 }
 
 .skills-box
 {
+	position: relative;
+	top: -60px;
 	border: 1px solid #e0e5e1;
-	border-radius: 50px 50px 50px 50px;
+	border-radius: 50px;
 	padding: 5% 0;
-	background-color: rgb(183, 177, 174);
+	margin: 0 5%;
 }
 
 .skills-content
 {
-	margin: 20px 0;
-	padding: 20px 0;
-}
-
-#skills-content-center
-{
-	border: 1px solid #e0e5e1;
-}
-
-.list-group-item
-{
-	background-color: rgb(183, 177, 174);
-	border-left: none;
-	border-right: none;
-
-}
-
-.badge-align
-{
-	margin-left: 50px;
+	margin: 0 2%;
+	padding: 2% 5%;
+	text-align: center;
 }
 
 .skill
 {
-	min-width: 100px;
+	border-bottom: 1px solid #e0e5e1;
+	padding: 2% 0;
+	margin: 3% 0 0;
 }
 
 .projects
@@ -188,15 +207,7 @@ a
 .project
 {
 	margin: 3% 2% 0;
-	background-repeat: no-repeat;
-	background-size: cover;
-	color: transparent;
 	text-align: center;
-}
-
-.project:hover
-{
-	color: #000;
 }
 
 .social-links
@@ -228,6 +239,15 @@ a
 
 
 /*media queries*/
+/*Small height but large width*/
+@media (max-height: 700px) and (min-width: 500px) and (max-width: 991.98px) 
+{
+	.more-about
+	{
+		display: none !important;
+	}
+}
+
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) 
 {
@@ -244,6 +264,7 @@ a
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) 
 {
+
 	
 }
 
@@ -253,32 +274,52 @@ a
 	.banner
 	{
 		min-height: 70vh;
-		background-image: url(../images/banner.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-  		background-position: center center; 
-  		margin-top: 5vh;
 	}
 
-	/*.avatar
+	.banner-wrapper
+	{
+		padding: 14vh 0 0;
+	}
+
+	.avatar
 	{
 		position: absolute;
-		right: 50vh;
-		bottom: 20vh;
-		z-index: 1;
-	}*/
+		padding: 0;
+		bottom: 0;
+		right: 0;
+	}
+
+	.avatar-glow
+	{
+		position: absolute;
+		bottom: -100px;
+		right: 100px;
+	}
+
+	.skills-box
+	{
+		padding: 2% 0;
+	}
 
 	.skills-content
 	{
-		padding: 0;
-		margin: 0;
+		margin: 0 2%;
+		padding: 2% 0;
 	}
 
-	#skills-content-center
+	.skill
 	{
-		border-top: none;
-		border-bottom: none;
+		margin: 10% 0 0;
+	}
+
+	.skills-content-left
+	{
+		border-right: 1px solid #e0e5e1;
+	}
+
+	.skills-content-right
+	{
+		border-left: 1px solid #e0e5e1;
 	}
 }
 
@@ -288,37 +329,51 @@ a
 	.banner
 	{
 		min-height: 70vh;
-		background-image: url(../images/banner.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-  		background-position: center center;
-  		margin-top: 5vh 
 	}
 
-/*	.avatar
+	.banner-wrapper
+	{
+		padding: 14vh 0 0;
+	}
+
+	.avatar
 	{
 		position: absolute;
-		right: -30vw;
-		bottom: 20vh;
-		z-index: 1;
-	}*/
+		padding: 0;
+		bottom: 0;
+		right: 0;
+	}
+
+	.avatar-glow
+	{
+		position: absolute;
+		bottom: -100px;
+		right: 100px;
+	}
+
+	.skills-box
+	{
+		padding: 2% 0;
+	}
 
 	.skills-content
 	{
-		padding: 0;
-		margin: 0;
+		margin: 0 3%;
+		padding: 2% 2%;
 	}
 
-	#skills-content-center
+	.skill
 	{
-		border-top: none;
-		border-bottom: none;
+		margin: 10% 0 0;
 	}
 
-	.project-img
+	.skills-content-left
 	{
-		width: 450px;
-		height: 250px;
+		border-right: 1px solid #e0e5e1;
+	}
+
+	.skills-content-right
+	{
+		border-left: 1px solid #e0e5e1;
 	}
 }

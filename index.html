@@ -17,10 +17,10 @@
 		<link rel="icon" type="image/gif/png" href="fab-icon.png">
 	</head>
 	<body>
-		<main class="container-fluid">
-			<header class="row header fixed-top">
+		<main class="container-fluid" data-spy="scroll" data-target="#navbar">
+			<header class="row fixed-top">
 				<nav id="navbar" class="col-lg-12 navbar navbar-expand-lg bg-theme1">
-					  <a class="navbar-brand" href="#">My Portfolio</a>
+					  <a class="navbar-brand text-theme-color2" href="index.html">My Portfolio</a>
 
 					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					    <span class="navbar-toggler-icon"></span>
@@ -29,223 +29,202 @@
 					  <div class="collapse navbar-collapse" id="navbar-content">
 						    <ul class="navbar-nav ml-auto">
 							      <li class="nav-item ml-auto">
-							        <a class="nav-link" href="#home">HOME</a>
+							        <a class="nav-link text-theme-color2" href="#home">HOME</a>
 							      </li>
 							      <li class="nav-item ml-auto">
-							        <a class="nav-link" href="#about">ABOUT</a>
+							        <a class="nav-link text-theme-color2" href="#about">ABOUT</a>
 							      </li>
 							      <li class="nav-item ml-auto">
-							        <a class="nav-link" href="#projects">PROJECTS</a>
+							        <a class="nav-link text-theme-color2" href="#projects">PROJECTS</a>
 							      </li>
 							      <li class="nav-item dropdown ml-auto">
-							        <a class="nav-link dropdown-toggle" href="navbarDropdown" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							        <a class="nav-link dropdown-toggle text-theme-color2" href="dropdown-menu" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							          CONNECT
 							        </a>
-							        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							          <a class="dropdown-item" href="https://gitlab.com/villadores.arjel" target="_blank"><i class="fab fa-gitlab"></i> GitLab</a>
-							          <a class="dropdown-item" href="https://github.com/villadores-arjel" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-							          <a class="dropdown-item" href="mailto:villadores.arjel@gmail.com" target="_blank"><i class="fab fa-google-plus-g"></i> GMail</a>
-							          <a class="dropdown-item" href="https://www.linkedin.com/in/arjel-villadores-892846160/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-							          <a class="dropdown-item" href="https://www.facebook.com/jell.transport.9" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a>
+							        <div class="dropdown-menu bg-theme1 text-theme-color2" aria-labelledby="navbarDropdown">
+							          <a class="dropdown-item text-theme-color2" href="https://gitlab.com/villadores.arjel" target="_blank"><i class="fab fa-gitlab"></i> GitLab</a>
+							          <a class="dropdown-item text-theme-color2" href="https://github.com/villadores-arjel" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+							          <a class="dropdown-item text-theme-color2" href="mailto:villadores.arjel@gmail.com" target="_blank"><i class="fab fa-google-plus-g"></i> GMail</a>
+							          <a class="dropdown-item text-theme-color2" href="https://www.linkedin.com/in/arjel-villadores-892846160/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+							          <a class="dropdown-item text-theme-color2" href="https://www.facebook.com/jell.transport.9" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a>
 							          <div class="dropdown-divider"></div>
-							          <span class="dropdown-item"><i class="fas fa-mobile-alt"></i> 09151240243</span>
+							          <span class="dropdown-item text-theme-color2"><i class="fas fa-mobile-alt"></i> 09151240243</span>
 							        </div>
 							      </li>
 						    </ul>
-						    <!-- <form class="form-inline my-2 my-lg-0 d-none d-md-block">
-						      <div class="input-group">
-								  <input type="search" class="form-control" placeholder="Search" aria-label="Search">
-								  <div class="input-group-append">
-								  	<button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
-								  </div>
-							  </div>
-						    </form> -->
 					  </div>
 				</nav>
 			</header>
-				
-			<section id="home" class="row banner text-theme-color2">
-				<div class="col-md-12 d-flex flex-column justify-content-center align-items-center">
-					<h3>Hi I'm Jel</h3>
-					<h4>I think....I code...</h4>
-					<h4>I create something...</h4>
-					<h2>AWESOME</h2>
-				</div>
-				<div class="col-md-12 avatar d-flex flex-column justify-content-center align-items-center">
-					<div class="row">
-						<div class="avatar-glow d-flex flex-column justify-content-center align-items-center">
-							<div class="avatar-glow-inner d-flex flex-column justify-content-center align-items-center">
+
+			<section id="home" class="row banner">
+				<div class="banner-wrapper">
+					<div class="col-md-12 d-flex flex-column justify-content-center align-items-center text-theme-color3">
+						<h3 class="display-4">Hi I'm Jel</h3>
+						<h4>I think....I code...</h4>
+						<h4>I create something...</h4>
+						<h2 class="display-4">AWESOME</h2>
+					</div>
+					<div class="col-md-12 avatar d-flex justify-content-center">
+						<div class="avatar-glow d-flex flex-column justify-content-center align-items-center bg-theme1">
+							<div class="avatar-glow-inner d-flex flex-column justify-content-center align-items-center bg-theme3">
 								<img class="avatar-img" src="https://picsum.photos/200" />
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-12 d-flex d-lg-none justify-content-center align-items-center">
-					<button class="btn btn-secondary">
-						<a id="more-about-me" href="#about"><i class="fas fa-arrow-down"> More about me</i></a>
-					</button>
+					<div class="col-md-12 more-about d-flex d-lg-none justify-content-center align-items-center">
+						<button class="btn btn-more-about">
+							<a href="#about"><i class="fas fa-arrow-down"> More about me</i></a>
+						</button>
+					</div>
 				</div>
 			</section> <!-- end banner -->
 
-			<section id="about"  class="row about">
-				<div class="col-md-12 about-intro text-theme-color2">
+			<section id="about"  class="row bg-theme1">
+				<div class="col-md-12 about-intro text-theme-color2 bg-theme2">
 					<h2>About me</h2>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						I'm an Engineer!!! I like to do stuff that challenge me, I like to develop things that makes our life easy -- that's when I decide to be a programmer/developer.
 					</p>
-					
-				</div>
+					<p>
+						I can be a back-end dev or a front-end....or maybe a full-stack developer. I started as a java developer, then try to learn the web development - HTML, CSS, Javascript, PHP.
+					</p>
+				</div> <!-- end about me intro -->
 				<div class="col-md-12">
-					<div class="row skills">
-					  	<div class="col-md-12">
-					  		<div class="row skills-box text-theme-color1">
-					  			<div class="skills-content col-lg-4 d-flex flex-column align-items-center">
-									<h2><i class="fas fa-code"></i></h2>
-									<h5>Programming Languages</h5>
-									<ul class="list-group">
-									  <li class="list-group-item d-flex flex-row">
-									  	<div class="skill">HTML</div>
-									  	<div class="badge badge-pill badge-align">
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  	</div>
-									  </li>
-									  <li class="list-group-item d-flex flex-row">
-									  <div class="skill">CSS</div>
-									  	<div class="badge badge-pill badge-align">
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  	</div>
-									  </li>
-									  <li class="list-group-item d-flex flex-row">
-									 <div class="skill">JAVA</div>
-									  	<div class="badge badge-pill badge-align">
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  	</div>
-									  </li>
-									  <li class="list-group-item d-flex flex-row">
-									  	<div class="skill">JAVASCRIPT</div>
-									  	<div class="badge badge-pill badge-align">
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  	</div>
-									  </li>
-									  <li class="list-group-item d-flex flex-row">
-									  <div class="skill">PHP</div>
-									  	<div class="badge badge-pill badge-align">
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  	</div>
-									  </li>
-									</ul>
-								</div>
-								<div id="skills-content-center" class="skills-content col-lg-4 d-flex flex-column align-items-center">
-									<h2><i class="fas fa-wrench"></i></h2>
-									<h5>IDE and Version Control</h5>
-									<ul class="list-group">
-									  <li class="list-group-item d-flex flex-row">
-									  <div class="skill">ECLIPSE</div>
-									  	<div class="badge badge-pill badge-align">
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  	</div>
-									  </li>
-									  <li class="list-group-item d-flex flex-row">
-									  <div class="skill">SUBLIME</div>
-									  	<div class="badge badge-pill badge-align">
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  	</div>
-									  </li>
-									  <li class="list-group-item d-flex flex-row">
-									  <div class="skill">GIT</div>
-									  	<div class="badge badge-pill badge-align">
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  	</div>
-									  </li>
-									</ul>
-								</div>
-								<div class="skills-content col-lg-4 d-flex flex-column align-items-center">
-									<h2><i class="fas fa-database"></i></h2>
-									<h5>Databases and Frameworks</h5>
-									<ul class="list-group">
-									  <li class="list-group-item d-flex flex-row">
-									  <div class="skill">SPRING</div>
-									  	<div class="badge badge-pill badge-align">
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  	</div>
-									  </li>
-									  <li class="list-group-item d-flex flex-row">
-									  <div class="skill">LARAVEL</div>
-									  	<div class="badge badge-pill badge-align">
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  	</div>
-									  </li>
-									  <li class="list-group-item d-flex flex-row">
-									  <div class="skill">BOOTSTRAP</div>
-									  	<div class="badge badge-pill badge-align">
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  	</div>
-									  </li>
-									  <li class="list-group-item d-flex flex-row">
-									  <div class="skill">SQL</div>
-									  	<div class="badge badge-pill badge-align">
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  		<i class="fas fa-trophy text-light"></i>
-									  	</div>
-									  </li>
-									</ul>
-								</div>
-					  		</div>
-					  	</div>
-					</div>
-				</div>
+			  		<div class="row skills-box d-flex flex-row justify-content-center text-theme-color1 bg-theme3">
+			  			<div class="skills-content skills-content-left col-lg-3">
+							<h2><i class="fas fa-code"></i></h2>
+							<h5>Programming Languages</h5>
+						  	<div class="row skill">
+							  	<div class="col-5"><h6>HTML</h6></div>
+							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  	</div>
+						  	</div>
+							<div class="row skill">
+							  	<div class="col-5"><h6>CSS</h6></div>
+							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  	</div>
+						  	</div>
+							<div class="row skill">
+							  	<div class="col-5"><h6>JAVASCRIPT</h6></div>
+							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  	</div>
+						  	</div>
+							<div class="row skill">
+							  	<div class="col-5"><h6>PHP</h6></div>
+							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  	</div>
+						  	</div>
+							<div class="row skill">
+							  	<div class="col-5"><h6>JAVA</h6></div>
+							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  	</div>
+						  	</div>
+						</div>
+						<div class="skills-content skills-content-center col-lg-3">
+							<h2><i class="fas fa-wrench"></i></h2>
+							<h5>IDE &amp; Version Control</h5>
+						  	<div class="row skill">
+							  	<div class="col-5"><h6>GIT</h6></div>
+							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  	</div>
+						  	</div>
+							<div class="row skill">
+							  	<div class="col-5"><h6>SUBLIME</h6></div>
+							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  	</div>
+						  	</div>
+							<div class="row skill">
+							  	<div class="col-5"><h6>ECLIPSE</h6></div>
+							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  	</div>
+						  	</div>
+						</div>
+						<div class="skills-content skills-content-right col-lg-3">
+							<h2><i class="fas fa-code"></i></h2>
+							<h5>Databases &amp; Frameworks</h5>
+						  	<div class="row skill">
+							  	<div class="col-5"><h6>BOOTSTRAP</h6></div>
+							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  	</div>
+						  	</div>
+							<div class="row skill">
+							  	<div class="col-5"><h6>LARAVEL</h6></div>
+							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  	</div>
+						  	</div>
+							<div class="row skill">
+							  	<div class="col-5"><h6>SPRING</h6></div>
+							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  	</div>
+						  	</div>
+							<div class="row skill">
+							  	<div class="col-5"><h6>SQL</h6></div>
+							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  		<i class="fas fa-trophy text-light"></i>
+							  	</div>
+						  	</div>
+						</div>
+			  		</div>
+				</div> <!-- end skills -->
 			</section> <!-- end about -->
 
 			<section id="projects"  class="row projects">
@@ -253,16 +232,14 @@
 					<h2 class="text-theme-color2">Projects</h2>
 				</div>
 				<div class="col-md-12">
-					<ul class="row project-list d-flex justify-content-center align-items-center">
+					<ul class="row project-list d-flex justify-content-center align-items-center text-theme-color2">
 						<li class="col-lg-3 offset-lg-1 col-md-3 offset-md-2 project">
-							<a href=""><img class="w-100" src="assets/images/ivfc-website.png"></a>
-							<h5>Project 1</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua.</p>
+							<a href="https://villadores-arjel.github.io/ivfc/" target="_blank"><img class="w-100" src="assets/images/ivfc-website.png" alt="ivfc website"></a>
+							<h5><strong>iVolunteer for Filipino Children</strong></h5>
+							<p>A non-profit organization that help less privilege children to have a better future</p>
 						</li>
 					</ul>
-				</div>
-				
+				</div>	
 			</section> <!-- end projects -->
 
 			<footer id="footer" class="bg-theme1 row">
@@ -290,10 +267,13 @@
 
 	    <!-- smooth scroll -->
 	    <script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
-
 	    <script>
 	    	var scroll = new SmoothScroll('a[href*="#"]');
 	    </script>
 
+	    <!-- spy scroll -->
+	    <script>
+	    	$('body').scrollspy({ target: '#navbar' });
+	    </script>
 	</body>
 </html>
