@@ -9,6 +9,8 @@
 		<link rel="stylesheet" type="text/css" href="assets/bootstrap-4.1.1-dist/css/bootstrap.min.css">
 		<!-- external css -->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<!-- animated css -->
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 		<!-- font awesome -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 		<!-- google fonts -->
@@ -17,7 +19,7 @@
 		<link rel="icon" type="image/gif/png" href="fab-icon.png">
 	</head>
 	<body>
-		<main class="container-fluid" data-spy="scroll" data-target="#navbar">
+		<main class="container-fluid main" data-spy="scroll" data-target="#navbar">
 			<header class="row fixed-top">
 				<nav id="navbar" class="col-lg-12 navbar navbar-expand-lg bg-theme1">
 					  <a class="navbar-brand text-theme-color2" href="index.html">
@@ -64,7 +66,7 @@
 
 			<section id="home" class="row banner">
 				<div class="banner-wrapper">
-					<div class="col-md-12 d-flex flex-column justify-content-center align-items-center text-theme-color3">
+					<div class="col-md-12 d-flex flex-column justify-content-center align-items-center text-theme-color3 wow slideInDown">
 						<h3 class="display-4">Hi I'm Jel</h3>
 						<h4>I think....I code...</h4>
 						<h4>I create something...</h4>
@@ -73,7 +75,7 @@
 					<div class="col-md-12 avatar d-flex justify-content-center">
 						<div class="avatar-glow d-flex flex-column justify-content-center align-items-center">
 							<div class="avatar-glow-inner d-flex flex-column justify-content-center align-items-center">
-								<img class="avatar-img" src="assets/images/avatar-pic.jpg" />
+								<img class="avatar-img wow fadeIn" src="assets/images/avatar-pic.jpg" />
 							</div>
 						</div>
 					</div>
@@ -233,13 +235,13 @@
 				</div> <!-- end skills -->
 			</section> <!-- end about -->
 
-			<section id="projects"  class="row projects bg-theme2">
+			<section id="projects"  class="row projects">
 				<div class="col-md-12 d-flex justify-content-center align-items-center">
 					<h2 class="text-theme-color2 display-4">Projects</h2>
 				</div>
 				<div class="col-md-12">
 					<div class="row project-list text-theme-color2">
-						<div class="col-md-3 project bg-theme3">
+						<div class="col-md-3 project bg-theme3 wow fadeInRight">
 							<a href="https://villadores-arjel.github.io/ivfc/" target="_blank"><img class="w-100" src="assets/images/ivfc-website.png" alt="ivfc website"></a>
 							<div class="project-desc text-theme-color1">
 								<h5><strong>iVolunteer for Filipino Children</strong></h5>
@@ -248,7 +250,7 @@
 							</div>
 						</div>
 
-						<div class="col-md-3 project bg-theme3">
+						<div class="col-md-3 project bg-theme3 wow fadeInRight" data-wow-delay="1s">
 							<a href="#" target="_blank"><img class="w-100" src="http://via.placeholder.com/350x250" alt=""></a>
 							<div class="project-desc text-theme-color1">
 								<h5><strong>On Going project</strong></h5>
@@ -294,5 +296,11 @@
 	    <script>
 	    	$('body').scrollspy({ target: '#navbar' });
 	    </script>
+
+	    <script type="text/javascript" src="assets/js/wow.js"></script>
+	    <script>
+	      	new WOW().init();
+	    </script>
+
 	</body>
 </html>
