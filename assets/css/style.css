@@ -100,13 +100,22 @@ a
 	color: rgb(214, 207, 203);
 }
 
-.banner
+.main
 {
 	background-image: url(../images/banner.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
+}
+
+.banner
+{
+	/*background-image: url(../images/banner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;*/
 }
 
 .banner-wrapper
@@ -116,6 +125,7 @@ a
 	min-height: 1px;
 	background-color: rgba(188, 114, 77, 0.8);
 	padding: 100px 5%;
+	text-align: center;
 }
 
 .avatar
@@ -202,6 +212,7 @@ a
 .projects
 {
 	padding: 20px;
+	background-color: rgba(188, 114, 77, 0.8);
 }
 
 .project-list
@@ -253,6 +264,14 @@ a
 
 /*media queries*/
 /*Extra small devices (portrait phones, less than 576px)*/
+@media (min-height: 641px)
+{
+	.banner-wrapper
+	{
+		padding: 20vh 5%;
+	}
+}
+
 @media (max-width: 575.98px) 
 {
 
@@ -417,5 +436,29 @@ a
 	small
 	{
 		font-size: 0.5vw;
+	}
+
+	.avatar-img
+	{
+		width: 350px;
+		height: 350px;
+	}
+
+	.avatar-glow-inner
+	{
+		width: 370px;
+		height: 370px;
+	}
+
+	.avatar-glow
+	{
+		width: 400px;
+		height: 400px;
+	}
+
+	.avatar-glow
+	{
+		bottom: -200px;
+		right: 200px;
 	}
 }
