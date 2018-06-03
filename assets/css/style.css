@@ -80,6 +80,11 @@ a
 	background-image: url(../images/navbar-icon.png);
 }
 
+.navbar-toggler
+{
+	border: 1px solid rgb(214, 207, 203);
+}
+
 .navbar-brand:hover
 {
 	color: rgb(214, 207, 203);
@@ -97,7 +102,6 @@ a
 
 .banner
 {
-	min-height: 100vh;
 	background-image: url(../images/banner.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -110,8 +114,8 @@ a
 	position: relative;
 	width: 100%;
 	min-height: 1px;
-	background-color: rgba(188, 114, 77, 0.5);
-	padding: 10vh 5%;
+	background-color: rgba(188, 114, 77, 0.8);
+	padding: 100px 5%;
 }
 
 .avatar
@@ -133,6 +137,7 @@ a
 	height: 170px;
 	border-radius: 50%;
 	z-index: 2;
+	background-color: rgba(183, 177, 174, 0.5);
 }
 
 .avatar-glow
@@ -141,12 +146,13 @@ a
 	height: 200px;
 	border-radius: 50%;
 	z-index: 1;
+	background-color: rgba(86, 80, 77, 0.5);
 }
 
 .more-about
 {
 	position: absolute;
-	bottom: 10vh;
+	bottom: 10px;
 	margin: 0 -5%;
 }
 
@@ -154,13 +160,13 @@ a
 {
 	background-color: rgb(86, 80, 77);
 	text-decoration: none;
-	padding: 4%;
+	padding: 15px;
 	color: rgb(242, 239, 239);
 }
 
 .about-intro
 {
-	padding: 5% 5% 100px;
+	padding: 8% 5% 100px;
 	text-align: center;
 }
 
@@ -195,18 +201,34 @@ a
 
 .projects
 {
-	background-color: rgb(188, 114, 77);
 	padding: 20px;
 }
 
 .project-list
 {
-	list-style-type: none;
+	display: flex;
+  	flex-wrap: nowrap;
+  	overflow-x: auto;
+  	-webkit-overflow-scrolling: touch;
+	&::-webkit-scrollbar {
+    	display: none;
+ 	 }
 }
 
-.project
+.col-md-3.project
 {
-	margin: 3% 2% 0;
+	padding: 0px;
+	margin: 20px 10px 10px;
+}
+
+.project-desc
+{
+	padding: 20px 10px;
+	text-align: center;
+}
+
+.project-desc p
+{
 	text-align: center;
 }
 
@@ -219,16 +241,7 @@ a
 
 .social-links>a
 {
-	color: black;
 	margin: 0 10px;
-}
-
-.social-link-border
-{
-	background-color: red;
-	width: 30px;
-	height: 25px;
-	border-radius: 50%;
 }
 
 #copyright
@@ -239,26 +252,40 @@ a
 
 
 /*media queries*/
-/*Small height but large width*/
-@media (max-height: 700px) and (min-width: 500px) and (max-width: 991.98px) 
-{
-	.more-about
-	{
-		display: none !important;
-	}
-}
-
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) 
 {
 
-	
+	.display-4 {
+	  font-size: 2.5rem;
+	  font-weight: 300;
+	  line-height: 1.2;
+	}
+
+	.project
+	{
+		-ms-flex: 0 0 100%;
+		 flex: 0 0 100%;
+		 max-width: 100%;
+	}
+
 }
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px)
 {
-	
+	.display-4 {
+	  font-size: 2.75rem;
+	  font-weight: 300;
+	  line-height: 1.2;
+	}
+
+	.project
+	{
+		-ms-flex: 0 0 100%;
+		 flex: 0 0 100%;
+		 max-width: 100%;
+	}
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -271,16 +298,6 @@ a
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) 
 {
-	.banner
-	{
-		min-height: 70vh;
-	}
-
-	.banner-wrapper
-	{
-		padding: 14vh 0 0;
-	}
-
 	.avatar
 	{
 		position: absolute;
@@ -326,14 +343,9 @@ a
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) 
 {
-	.banner
-	{
-		min-height: 70vh;
-	}
-
 	.banner-wrapper
 	{
-		padding: 14vh 0 0;
+		padding: 10% 5%;
 	}
 
 	.avatar
@@ -375,5 +387,35 @@ a
 	.skills-content-right
 	{
 		border-left: 1px solid #e0e5e1;
+	}
+}
+
+/*super large screen*/
+@media (min-width: 2500px)
+{
+	.display-4
+	{
+		font-size: 2.75vw;
+	}
+
+	.active, .nav-link:hover, .nav-link:focus /*.nav-link.active*/
+	{
+		width: 5vw;
+	}
+
+	h1, h2, h3, h4, h5, h6
+	{
+		font-size: 2vw;
+	}
+
+	p, a, i
+	{
+		font-size: 1vw;
+		line-height: 1vw;
+	}
+
+	small
+	{
+		font-size: 0.5vw;
 	}
 }
