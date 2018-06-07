@@ -26,6 +26,11 @@ a
 	text-decoration: none;
 }
 
+hr
+{
+	border-color: rgb(132, 81, 104);
+}
+
 .clear:after
 {
 	content: " ";
@@ -44,6 +49,17 @@ a
 	font-weight: bold;
 }
 
+.text-theme-color2
+{
+	color: rgb(252, 252, 252);
+}
+
+.text-theme-color2-bold
+{
+	color: rgb(252, 252, 252);
+	font-weight: bold;
+}
+
 .bg-theme1
 {
 	background-color: rgb(132, 81, 104);
@@ -51,7 +67,12 @@ a
 
 .bg-theme2
 {
-	background-color: rgb(252, 252, 252);
+	background: radial-gradient(circle, rgba(252, 252, 252), rgb(226, 226, 226), #c6c4c6);
+}
+
+.bg-theme3
+{
+	background-color: rgba(252, 252, 252);
 }
 
 .btn-theme
@@ -118,6 +139,63 @@ a
 .project
 {
 	margin: 2% 0;
+}
+
+.project .card .card-img-top
+{
+	min-height: 250px;
+	transition: .5s ease;
+  	backface-visibility: hidden;
+  	opacity: 1;
+}
+
+.project .card .card-img-overlay
+{
+	transition: .5s ease;
+  	opacity: 0;
+  	background: radial-gradient(circle, rgba(252, 252, 252), rgb(226, 226, 226), #c6c4c6);
+}
+
+.project .card .card-img-top:hover
+{
+	opacity: 0.3;
+}
+
+.project .card .card-img-overlay:hover
+{
+	opacity: 0.9;
+}
+
+.connect-form
+{
+	padding: 2%;
+	text-align: center;
+	color: #f9f9f9;
+}
+
+/*override form control box shadow*/
+.form-control:focus {
+	border-color: rgb(252, 252, 252);
+  	box-shadow: 0 0 0 0.2rem rgba(252, 252, 252, 0.25);
+}
+
+.connect-links
+{
+	padding: 2%;
+	text-align: center;
+	color: #f9f9f9;
+}
+
+.social-links>a
+{
+	margin: 2%;
+	text-decoration: none;
+	color: #fff;
+}
+
+.copyright
+{
+	text-align: center;
 }
 
 /*Small height but large width*/
