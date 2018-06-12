@@ -96,6 +96,11 @@ hr
 	color: rgba(132, 81, 104, 0.5);
 }
 
+.navbar-toggler-icon
+{
+	background-image: url("../images/navbar-icon.png");
+}
+
 .header
 {
 	min-height: 100vh;
@@ -197,6 +202,74 @@ hr
 {
 	text-align: center;
 }
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+#sidebar 
+{
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    z-index: 1111;
+    transition: all 0.3s;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active 
+{
+    left: 0;
+}
+
+#close-sidebar 
+{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-left: 100px;
+}
+
+#side-nav-overlay 
+{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1110;
+    display: none;
+    transition: all 0.3s;
+}
+
+#side-nav-overlay.active
+{
+	display: block;
+}
+
+/* ---------------------------------------------------
+    Media Queries
+----------------------------------------------------- */
+/*hide side navbar on large devices even active*/
+@media (min-width: 992px)
+{
+	#side-nav-overlay.active
+	{
+		display: none;
+	}
+
+	#sidebar.active 
+	{
+	    left: 0;
+	}
+}
+
+
 
 /*Small height but large width*/
 @media (max-height: 700px)

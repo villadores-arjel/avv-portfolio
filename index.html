@@ -19,160 +19,184 @@
 		<link rel="icon" type="image/gif/png" href="fab-icon.png">
 	</head>
 	<body>
-		<main class="main container-fluid">
+		<main class="main">
+			<nav id="sidebar" class="bg-theme3">
+                <div id="close-sidebar">
+                    <i class="nav-link text-theme-color-bold fas fa-window-close"></i>
+                </div>
 
-			<nav class="navbar navbar-expand-lg bg-theme3 fixed-top">
-				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon"></span>
-				  </button>
-				  <div class="collapse navbar-collapse" id="navbarNav">
-				    <ul class="navbar-nav">
+                <ul class="list-unstyled">
 				      <li class="nav-item">
-				        <a class="nav-link text-theme-color-bold active" href="#">Home</a>
+				        <a class="nav-link text-theme-color-bold" href="#home">Home</a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link text-theme-color-bold" href="#">About</a>
+				        <a class="nav-link text-theme-color-bold" href="#about">About</a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link text-theme-color-bold" href="#">Projects</a>
+				        <a class="nav-link text-theme-color-bold" href="#projects">Projects</a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link text-theme-color-bold" href="#">Contacts</a>
+				        <a class="nav-link text-theme-color-bold" href="#contact">Contacts</a>
 				      </li>
-				    </ul>
-				  </div>
-			</nav> <!-- end nav -->
+			    </ul>
+            </nav> <!-- end side bar -->
 
-			<header class="row header">
-				<div class="col-md-12 banner-text d-flex flex-column align-items-center justify-content-center">
-					<h1 class="text-theme-color-bold">Web Developer</h1>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua.
-					</p>
-				</div>
-				<div class="col-md-12 banner-btn d-flex align-items-center justify-content-center">
-					<button type="button" class="btn btn-theme">More</button>
-				</div>
-			</header> <!-- end header -->
+            <div id="side-nav-overlay"></div>
 
-			<section class="row about">
-				<div class="col-md-4 bg-theme1 d-flex flex-column align-items-center justify-content-center">
-					<img class="avatar" src="assets/images/avatar-pic.jpg" alt="my picture">
-				</div>
+			<div class="content container-fluid">
+				<nav class="navbar navbar-expand-lg bg-theme3 fixed-top">
+					  <button id="sidebarCollapse" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class="navbar-toggler-icon"></span>
+					  </button>
+					  <div class="collapse navbar-collapse" id="navbarNav">
+					    <ul class="navbar-nav">
+					      <li class="nav-item">
+					        <a class="nav-link text-theme-color-bold" href="#home">Home</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link text-theme-color-bold" href="#about">About</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link text-theme-color-bold" href="#projects">Projects</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link text-theme-color-bold" href="#contact">Contacts</a>
+					      </li>
+					    </ul>
+					  </div>
+				</nav> <!-- end nav -->
 
-				<div class="col-md-8 bg-theme2 d-flex flex-column align-items-center justify-content-center">
-					<div class="about-intro">
-						<h2 class="text-theme-color-bold">About Me</h2>
-						<p class="text-theme-color">
+				<header id="home" class="row header">
+					<div class="col-md-12 banner-text d-flex flex-column align-items-center justify-content-center">
+						<h1 class="text-theme-color-bold">Web Developer</h1>
+						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</p>
-						<div class="banner-btn d-flex align-items-center justify-content-end">
-							<button type="button" class="btn btn-theme">Skills</button>
-						</div>
-					</div>
-					<div class="skills">
-						<h2 class="text-theme-color-bold">Skills</h2>
-						<p class="text-theme-color">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							tempor incididunt ut labore et dolore magna aliqua.
 						</p>
 					</div>
-				</div>
-			</section> <!-- end about -->
+					<div class="col-md-12 banner-btn d-flex align-items-center justify-content-center">
+						<button type="button" class="btn btn-theme">More</button>
+					</div>
+				</header> <!-- end header -->
 
-			<section class="row projects">
-				<div class="col-md-12">
-					<h2 class="text-theme-color-bold">Projects</h2>
-				</div>
-				<div class="col-md-4 col-lg-3 project">
-					<div class="card">
-					  <img class="card-img-top" src="assets/images/ivfc-website.png" alt="ivfc website">
-					  <div class="card-img-overlay">
-					    <h5 class="card-title text-theme-color-bold">iVolunteer for Filipino Children (iVFC)</h5>
-					    <hr/>
-					    <p class="card-text text-theme-color">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    <a href="#" class="btn btn-theme">Visit Site</a>
-					  </div>
+				<section id="about" class="row about">
+					<div class="col-md-4 bg-theme1 d-flex flex-column align-items-center justify-content-center">
+						<img class="avatar" src="assets/images/avatar-pic.jpg" alt="my picture">
 					</div>
-				</div>
-				<div class="col-md-4 col-lg-3 project">
-					<div class="card">
-					  <img class="card-img-top" src="assets/images/comming-soon.jpg" alt="website under const">
-					  <div class="card-img-overlay">
-					    <h5 class="card-title text-theme-color-bold">Comming Soon</h5>
-					    <hr/>
-					    <p class="card-text text-theme-color">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    <a href="#" class="btn btn-theme">Visit Site</a>
-					  </div>
-					</div>
-				</div>
-				<div class="col-md-4 col-lg-3 project">
-					<div class="card">
-					  <img class="card-img-top" src="assets/images/comming-soon.jpg" alt="website under const">
-					  <div class="card-img-overlay">
-					    <h5 class="card-title text-theme-color-bold">Comming Soon</h5>
-					    <hr/>
-					    <p class="card-text text-theme-color">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    <a href="#" class="btn btn-theme">Visit Site</a>
-					  </div>
-					</div>
-				</div>
-				<div class="col-md-4 col-lg-3 project">
-					<div class="card">
-					  <img class="card-img-top" src="assets/images/comming-soon.jpg" alt="website under const">
-					  <div class="card-img-overlay">
-					    <h5 class="card-title text-theme-color-bold">Comming Soon</h5>
-					    <hr/>
-					    <p class="card-text text-theme-color">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    <a href="#" class="btn btn-theme">Visit Site</a>
-					  </div>
-					</div>
-				</div>
-			</section> <!-- end projects -->
 
-			<footer class="row bg-theme1">
-				<div class="col-lg-8 connect-form">
-					<h5>Send me message</h5>
-					<form class="row">
-						<div class="form-group col-lg-6">
-						    <input type="text" class="form-control" id="name" placeholder="Enter your name" />
+					<div class="col-md-8 bg-theme2 d-flex flex-column align-items-center justify-content-center">
+						<div class="about-intro">
+							<h2 class="text-theme-color-bold">About Me</h2>
+							<p class="text-theme-color">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<div class="banner-btn d-flex align-items-center justify-content-end">
+								<button type="button" class="btn btn-theme">Skills</button>
+							</div>
 						</div>
-					  	<div class="form-group col-lg-6">
-						    <input type="email" class="form-control" id="email" placeholder="Enter your email" />
-						    <small id="emailHelp" class="text-theme-color2">Your email will not be shared with anyone else.</small>
-					  	</div>
-					  	<div class="form-group col-lg-12">
-					    	<textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Enter your message"></textarea>
-					  	</div>
-					  	<div class="col-lg-12 d-flex justify-content-center">
-					    	<button type="submit" class="btn btn-theme">Submit</button>
-					  	</div>
-					</form>
-				</div>
-				<div class="col-lg-4 connect-links">
-					<h5>Follow me on</h5>
-					<div class="social-links d-flex flex-column justify-content-center">
-						<a href="#"><i class="fab fa-gitlab fa-lg"></i> Gitlab</a>
-						<a href="#"><i class="fab fa-github fa-lg"></i> GitHub</i></a>
-						<a href="#"><i class="fab fa-linkedin-in fa-lg"></i> LinkedIn</a>
-						<a href="#"><i class="fab fa-google-plus-g fa-lg"></i> Google+</a>
+						<div class="skills">
+							<h2 class="text-theme-color-bold">Skills</h2>
+							<p class="text-theme-color">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</div>
 					</div>
-				</div>
-				<div class="col-12 copyright bg-theme3">
-					<small class="text-theme-color-bold">Copyright &copy; 2018 | Arjel Villadores</small>
-				</div>
-				
-			</footer> <!-- end footer -->
+				</section> <!-- end about -->
+
+				<section id="projects" class="row projects">
+					<div class="col-md-12">
+						<h2 class="text-theme-color-bold">Projects</h2>
+					</div>
+					<div class="col-md-4 col-lg-3 project">
+						<div class="card">
+						  <img class="card-img-top" src="assets/images/ivfc-website.png" alt="ivfc website">
+						  <div class="card-img-overlay">
+						    <h5 class="card-title text-theme-color-bold">iVolunteer for Filipino Children (iVFC)</h5>
+						    <hr/>
+						    <p class="card-text text-theme-color">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <a href="#" class="btn btn-theme">Visit Site</a>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-3 project">
+						<div class="card">
+						  <img class="card-img-top" src="assets/images/comming-soon.jpg" alt="website under const">
+						  <div class="card-img-overlay">
+						    <h5 class="card-title text-theme-color-bold">Comming Soon</h5>
+						    <hr/>
+						    <p class="card-text text-theme-color">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <a href="#" class="btn btn-theme">Visit Site</a>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-3 project">
+						<div class="card">
+						  <img class="card-img-top" src="assets/images/comming-soon.jpg" alt="website under const">
+						  <div class="card-img-overlay">
+						    <h5 class="card-title text-theme-color-bold">Comming Soon</h5>
+						    <hr/>
+						    <p class="card-text text-theme-color">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <a href="#" class="btn btn-theme">Visit Site</a>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-3 project">
+						<div class="card">
+						  <img class="card-img-top" src="assets/images/comming-soon.jpg" alt="website under const">
+						  <div class="card-img-overlay">
+						    <h5 class="card-title text-theme-color-bold">Comming Soon</h5>
+						    <hr/>
+						    <p class="card-text text-theme-color">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <a href="#" class="btn btn-theme">Visit Site</a>
+						  </div>
+						</div>
+					</div>
+				</section> <!-- end projects -->
+
+				<footer id="contact" class="row bg-theme1">
+					<div class="col-lg-8 connect-form">
+						<h5>Send me message</h5>
+						<form class="row">
+							<div class="form-group col-lg-6">
+							    <input type="text" class="form-control" id="name" placeholder="Enter your name" />
+							</div>
+						  	<div class="form-group col-lg-6">
+							    <input type="email" class="form-control" id="email" placeholder="Enter your email" />
+							    <small id="emailHelp" class="text-theme-color2">Your email will not be shared with anyone else.</small>
+						  	</div>
+						  	<div class="form-group col-lg-12">
+						    	<textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Enter your message"></textarea>
+						  	</div>
+						  	<div class="col-lg-12 d-flex justify-content-center">
+						    	<button type="submit" class="btn btn-theme">Submit</button>
+						  	</div>
+						</form>
+					</div>
+					<div class="col-lg-4 connect-links">
+						<h5>Follow me on</h5>
+						<div class="social-links d-flex flex-column justify-content-center">
+							<a href="#"><i class="fab fa-gitlab fa-lg"></i> Gitlab</a>
+							<a href="#"><i class="fab fa-github fa-lg"></i> GitHub</i></a>
+							<a href="#"><i class="fab fa-linkedin-in fa-lg"></i> LinkedIn</a>
+							<a href="#"><i class="fab fa-google-plus-g fa-lg"></i> Google+</a>
+						</div>
+					</div>
+					<div class="col-12 copyright bg-theme3">
+						<small class="text-theme-color-bold">Copyright &copy; 2018 | Arjel Villadores</small>
+					</div>
+				</footer> <!-- end footer -->
+			</div>
+			
 
 		</main> <!-- end main -->
 
@@ -199,6 +223,20 @@
 	    <script>
 	      	new WOW().init();
 	    </script>
+
+	    <script type="text/javascript">
+            $(document).ready(function () {
+                $('#close-sidebar, #side-nav-overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                    $('#side-nav-overlay').removeClass('active');
+                });
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').addClass('active');
+                    $('#side-nav-overlay').addClass('active');
+                });
+            });
+        </script>
 
 	</body>
 </html>
