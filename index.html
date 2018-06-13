@@ -9,8 +9,6 @@
 		<link rel="stylesheet" type="text/css" href="assets/bootstrap-4.1.1-dist/css/bootstrap.min.css">
 		<!-- external css -->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-		<!-- animated css -->
-		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 		<!-- font awesome -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 		<!-- google fonts -->
@@ -24,21 +22,22 @@
                 <div id="close-sidebar">
                     <i class="nav-link text-theme-color-bold fas fa-window-close"></i>
                 </div>
-
-                <ul class="list-unstyled">
-				      <li class="nav-item">
-				        <a class="nav-link text-theme-color-bold" href="#home">Home</a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link text-theme-color-bold" href="#about">About</a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link text-theme-color-bold" href="#projects">Projects</a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link text-theme-color-bold" href="#contact">Contacts</a>
-				      </li>
-			    </ul>
+                <div id="navbarSide">
+	                <ul class="list-unstyled">
+					      <li class="nav-item">
+					        <a class="nav-link text-theme-color-bold" href="#home">Home</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link text-theme-color-bold" href="#about">About</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link text-theme-color-bold" href="#projects">Projects</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link text-theme-color-bold" href="#contact">Contacts</a>
+					      </li>
+				    </ul>
+				</div>
             </nav> <!-- end side bar -->
 
             <div id="side-nav-overlay"></div>
@@ -74,8 +73,8 @@
 							tempor incididunt ut labore et dolore magna aliqua.
 						</p>
 					</div>
-					<div class="col-md-12 banner-btn d-flex align-items-center justify-content-center">
-						<button type="button" class="btn btn-theme">More</button>
+					<div class="col-md-12 d-flex align-items-center justify-content-center">
+						<a href="#about"><button type="button" class="btn btn-theme">More about me</button></a>
 					</div>
 				</header> <!-- end header -->
 
@@ -84,8 +83,8 @@
 						<img class="avatar" src="assets/images/avatar-pic.jpg" alt="my picture">
 					</div>
 
-					<div class="col-md-8 bg-theme2 d-flex flex-column align-items-center justify-content-center">
-						<div class="about-intro">
+					<div class="col-md-8 bg-theme2">
+						<div id="about-intro" class="about-intro">
 							<h2 class="text-theme-color-bold">About Me</h2>
 							<p class="text-theme-color">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -95,20 +94,127 @@
 								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</p>
-							<div class="banner-btn d-flex align-items-center justify-content-end">
-								<button type="button" class="btn btn-theme">Skills</button>
+							<div class="d-flex align-items-center justify-content-end">
+								<button id="btn-about" type="button" class="btn btn-theme">View my Skills</button>
 							</div>
-						</div>
-						<div class="skills">
-							<h2 class="text-theme-color-bold">Skills</h2>
-							<p class="text-theme-color">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</p>
+						</div> <!-- end about intro -->
+						<div id="skills" class="row skills">
+							<div class="col-12">
+								<h2 class="text-theme-color-bold">Skills</h2>
+							</div>
+							<div class="col-md-12 col-lg-6">
+								<h2 class="text-theme-color"><i class="fas fa-code"></i></h2>
+								<h5 class="text-theme-color-bold">Programming Languages</h5>
+							  	<div class="row skill-set text-theme-color">
+								  	<div class="col-5 d-flex justify-content-start"><h6>HTML</h6></div>
+								  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  	</div>
+							  	</div>
+								<div class="row skill-set text-theme-color">
+								  	<div class="col-5 d-flex justify-content-start"><h6>CSS</h6></div>
+								  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  	</div>
+							  	</div>
+								<div class="row skill-set text-theme-color">
+								  	<div class="col-5 d-flex justify-content-start"><h6>JAVASCRIPT</h6></div>
+								  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  	</div>
+							  	</div>
+								<div class="row skill-set text-theme-color">
+								  	<div class="col-5 d-flex justify-content-start"><h6>PHP</h6></div>
+								  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  	</div>
+							  	</div>
+								<div class="row skill-set text-theme-color">
+								  	<div class="col-5 d-flex justify-content-start"><h6>JAVA</h6></div>
+								  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  	</div>
+							  	</div>
+						  	</div>
+
+						  	<div class="col-md-12 col-lg-6">
+								<h2 class="text-theme-color"><i class="fas fa-code"></i></h2>
+								<h5 class="text-theme-color-bold">Programming Languages</h5>
+							  	<div class="row skill-set text-theme-color">
+								  	<div class="col-5 d-flex justify-content-start"><h6>HTML</h6></div>
+								  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  	</div>
+							  	</div>
+								<div class="row skill-set text-theme-color">
+								  	<div class="col-5 d-flex justify-content-start"><h6>CSS</h6></div>
+								  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  	</div>
+							  	</div>
+								<div class="row skill-set text-theme-color">
+								  	<div class="col-5 d-flex justify-content-start"><h6>JAVASCRIPT</h6></div>
+								  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  	</div>
+							  	</div>
+								<div class="row skill-set text-theme-color">
+								  	<div class="col-5 d-flex justify-content-start"><h6>PHP</h6></div>
+								  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  	</div>
+							  	</div>
+								<div class="row skill-set text-theme-color">
+								  	<div class="col-5 d-flex justify-content-start"><h6>JAVA</h6></div>
+								  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  	</div>
+							  	</div>
+						  	</div>
+
+							<div class="d-flex align-items-center justify-content-end">
+								<button id="btn-skills" type="button" class="btn btn-theme">back</button>
+							</div>
 						</div>
 					</div>
 				</section> <!-- end about -->
@@ -124,7 +230,7 @@
 						    <h5 class="card-title text-theme-color-bold">iVolunteer for Filipino Children (iVFC)</h5>
 						    <hr/>
 						    <p class="card-text text-theme-color">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						    <a href="#" class="btn btn-theme">Visit Site</a>
+						    <a href="https://villadores-arjel.github.io/ivfc/" target="_blank" class="btn btn-theme">Visit Site</a>
 						  </div>
 						</div>
 					</div>
@@ -216,12 +322,8 @@
 
 	    <!-- spy scroll -->
 	    <script>
-	    	$('body').scrollspy({ target: '#navbar' });
-	    </script>
-
-	    <script type="text/javascript" src="assets/js/wow.js"></script>
-	    <script>
-	      	new WOW().init();
+	    	$('body').scrollspy({ target: '#navbarNav' });
+	    	$('body').scrollspy({ target: '#navbarSide' });
 	    </script>
 
 	    <script type="text/javascript">
@@ -234,6 +336,16 @@
                 $('#sidebarCollapse').on('click', function () {
                     $('#sidebar').addClass('active');
                     $('#side-nav-overlay').addClass('active');
+                });
+            
+                $('#btn-about').on('click', function(){
+                	$('#about-intro').css("display", "none");
+                	$('#skills').css("display", "flex");
+                });
+
+                $('#btn-skills').on('click', function(){
+                	$('#about-intro').css("display", "block");
+                	$('#skills').css("display", "none");
                 });
             });
         </script>
