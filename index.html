@@ -9,272 +9,333 @@
 		<link rel="stylesheet" type="text/css" href="assets/bootstrap-4.1.1-dist/css/bootstrap.min.css">
 		<!-- external css -->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-		<!-- animated css -->
-		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 		<!-- font awesome -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 		<!-- google fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cardo|Lato" rel="stylesheet">
 		<!-- favicon -->
 		<link rel="icon" type="image/gif/png" href="fab-icon.png">
 	</head>
 	<body>
-		<main class="container-fluid main" data-spy="scroll" data-target="#navbar">
-			<header class="row fixed-top">
-				<nav id="navbar" class="col-lg-12 navbar navbar-expand-lg bg-theme1">
-					  <a class="navbar-brand text-theme-color2" href="index.html">
-					  	<h3>
-					  		<i class="fas fa-chevron-up fa-lg"></i>
-					  		<i class="fas fa-chevron-down fa-lg"></i>
-					  		<i class="fas fa-chevron-down fa-lg"></i>
-					  	</h3>
-					  </a>
+		<main class="main">
+			<nav id="sidebar" class="bg-theme3">
+                <div id="close-sidebar">
+                    <i class="nav-link text-theme-color-bold fas fa-window-close"></i>
+                </div>
+                <div id="navbarSide">
+	                <ul class="list-unstyled">
+					      <li class="nav-item">
+					        <a class="nav-link text-theme-color-bold" href="#home">Home</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link text-theme-color-bold" href="#about">About</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link text-theme-color-bold" href="#projects">Projects</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link text-theme-color-bold" href="#contact">Contacts</a>
+					      </li>
+				    </ul>
+				</div>
+            </nav> <!-- end side bar -->
 
-					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div id="side-nav-overlay"></div>
+
+			<div class="content container-fluid">
+				<nav class="navbar navbar-expand-lg bg-theme3 fixed-top">
+					  <button id="sidebarCollapse" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					    <span class="navbar-toggler-icon"></span>
 					  </button>
-
-					  <div class="collapse navbar-collapse" id="navbar-content">
-						    <ul class="navbar-nav ml-auto">
-							      <li class="nav-item ml-auto">
-							        <a class="nav-link text-theme-color2" href="#home">HOME</a>
-							      </li>
-							      <li class="nav-item ml-auto">
-							        <a class="nav-link text-theme-color2" href="#about">ABOUT</a>
-							      </li>
-							      <li class="nav-item ml-auto">
-							        <a class="nav-link text-theme-color2" href="#projects">PROJECTS</a>
-							      </li>
-							      <li class="nav-item dropdown ml-auto">
-							        <a class="nav-link dropdown-toggle text-theme-color2" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							          CONNECT
-							        </a>
-							        <div class="dropdown-menu bg-theme1 text-theme-color2" aria-labelledby="navbarDropdown">
-							          <a class="dropdown-item text-theme-color2" href="https://gitlab.com/villadores.arjel" target="_blank"><i class="fab fa-gitlab"></i> GitLab</a>
-							          <a class="dropdown-item text-theme-color2" href="https://github.com/villadores-arjel" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-							          <a class="dropdown-item text-theme-color2" href="mailto:villadores.arjel@gmail.com" target="_blank"><i class="fab fa-google-plus-g"></i> GMail</a>
-							          <a class="dropdown-item text-theme-color2" href="https://www.linkedin.com/in/arjel-villadores-892846160/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-							          <a class="dropdown-item text-theme-color2" href="https://www.facebook.com/jell.transport.9" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a>
-							          <div class="dropdown-divider"></div>
-							          <span class="dropdown-item text-theme-color2"><i class="fas fa-mobile-alt"> 09151240243</i> </span>
-							        </div>
-							      </li>
-						    </ul>
+					  <div class="collapse navbar-collapse" id="navbarNav">
+					    <ul class="navbar-nav">
+					      <li class="nav-item">
+					        <a class="nav-link text-theme-color-bold" href="#home">Home</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link text-theme-color-bold" href="#about">About</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link text-theme-color-bold" href="#projects">Projects</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link text-theme-color-bold" href="#contact">Contacts</a>
+					      </li>
+					    </ul>
 					  </div>
-				</nav>
-			</header>
+				</nav> <!-- end nav -->
 
-			<section id="home" class="row banner">
-				<div class="banner-wrapper">
-					<div class="col-md-12 d-flex flex-column justify-content-center align-items-center text-theme-color3 wow slideInDown">
-						<h3 class="display-4">Hi I'm Jel</h3>
-						<h4>I think....I code...</h4>
-						<h4>I create something...</h4>
-						<h2 class="display-4">AWESOME</h2>
+				<header id="home" class="row header">
+					<div class="col-md-12 banner-text d-flex flex-column align-items-center justify-content-center">
+						<h5 class="text-theme-color">My name is Arjel and I'am a</h5>
+						<h1 class="text-theme-color-bold">Web Developer</h1>
+						<p class="text-theme-color">
+							Responsive Website | Front-end & Back-end scripting | Web services
+						</p>
 					</div>
-					<div class="col-md-12 avatar d-flex justify-content-center">
-						<div class="avatar-glow d-flex flex-column justify-content-center align-items-center">
-							<div class="avatar-glow-inner d-flex flex-column justify-content-center align-items-center">
-								<img class="avatar-img wow fadeIn" src="assets/images/avatar-pic.jpg" />
+					<div class="col-md-12 d-flex align-items-center justify-content-center">
+						<a href="#about"><button type="button" class="btn btn-theme">More about me</button></a>
+					</div>
+				</header> <!-- end header -->
+
+				<section id="about" class="row about">
+					<div class="col-md-4 bg-theme1 d-flex flex-column align-items-center justify-content-center">
+						<img class="avatar" src="assets/images/avatar-pic.jpg" alt="my picture">
+					</div>
+
+					<div class="col-md-8 bg-theme2">
+						<div id="about-intro" class="about-intro">
+							<h2 class="text-theme-color-bold">About Me</h2>
+							<p class="text-theme-color">
+								 I started as a JAVA developer. But my passion in developing websites lead me to become a full-stack developer specialized in HTML, CSS, JAVASCRIPT and PHP. I also had knowledge in SQL (Oracle and MySql), JAVA web services, UNIX and LINUX command. I also had background on different frameworks such as JQuery, Bootstrap, Laravel and Spring.
+							</p>
+							<p class="text-theme-color">
+								 I really like to do stuff that challenge me and I like to develop things that makes our life easy. Know more about my skill-set, click the button below or just scroll down to view my projects.
+							</p>
+							<div class="d-flex align-items-center justify-content-end">
+								<button id="btn-about" type="button" class="btn btn-theme">View my skills</button>
+							</div>
+						</div> <!-- end about intro -->
+						<div id="skills" class="row skills">
+							<div class="col-12">
+								<h2 class="text-theme-color-bold">What I know</h2>
+							</div>
+							<div class="col-md-12 col-lg-6">
+								<h2 class="text-theme-color"><i class="fas fa-code"></i></h2>
+								<h5 class="text-theme-color-bold">Programming Languages</h5>
+							  	<div class="row skill-set text-theme-color">
+								  	<div class="col-5 d-flex justify-content-start">
+								  		<h6><i class="fab fa-html5 text-danger"></i> HTML 5</h6>
+								  	</div>
+								  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  	</div>
+							  	</div>
+								<div class="row skill-set text-theme-color">
+								  	<div class="col-5 d-flex justify-content-start">
+								  		<h6><i class="fab fa-css3-alt text-primary"></i> CSS 3</h6>
+								  	</div>
+								  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  	</div>
+							  	</div>
+								<div class="row skill-set text-theme-color">
+								  	<div class="col-5 d-flex justify-content-start">
+								  		<h6><i class="fab fa-js-square text-warning"></i> Javascript</h6>
+								  	</div>
+								  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  	</div>
+							  	</div>
+								<div class="row skill-set text-theme-color">
+								  	<div class="col-5 d-flex justify-content-start">
+								  		<h6><i class="fab fa-php text-primary"></i> PHP</h6>
+								  	</div>
+								  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  	</div>
+							  	</div>
+								<div class="row skill-set text-theme-color">
+								  	<div class="col-5 d-flex justify-content-start">
+								  		<h6><img id="java-icon" src="assets/images/java.png"/>Java SE</h6>
+								  	</div>
+								  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  	</div>
+							  	</div>
+							  	<div class="row skill-set text-theme-color">
+								  	<div class="col-5 d-flex justify-content-start">
+								  		<h6><i class="fas fa-database text-primary"></i> SQL</h6>
+								  	</div>
+								  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  	</div>
+							  	</div>
+						  	</div> <!-- end programming languages -->
+
+						  	<div class="col-md-12 col-lg-6">
+								<h2 class="text-theme-color"><i class="fas fa-wrench"></i></h2>
+								<h5 class="text-theme-color-bold">Tools &amp; Frameworks</h5>
+							  	<div class="row skill-set text-theme-color">
+								  	<div class="col-5 d-flex justify-content-start">
+								  		<h6><i class="fas fa-code-branch text-dark"></i> GIT</h6>
+								  	</div>
+								  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  	</div>
+							  	</div>
+								<div class="row skill-set text-theme-color">
+								  	<div class="col-5 d-flex justify-content-start">
+								  		<h6><img id="jquery-icon" src="assets/images/jq.png"/> JQuery</h6>
+								  	</div>
+								  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  	</div>
+							  	</div>
+								<div class="row skill-set text-theme-color">
+								  	<div class="col-5 d-flex justify-content-start">
+								  		<h6><i class="text-primary">BS</i> Bootstrap</h6>
+								  	</div>
+								  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  	</div>
+							  	</div>
+								<div class="row skill-set text-theme-color">
+								  	<div class="col-5 d-flex justify-content-start">
+								  		<h6><i class="fab fa-laravel text-primary"></i> Laravel</h6>
+								  	</div>
+								  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  	</div>
+							  	</div>
+								<div class="row skill-set text-theme-color">
+								  	<div class="col-5 d-flex justify-content-start">
+								  		<h6><i class="fas fa-leaf text-success"></i> Spring</h6>
+								  	</div>
+								  	<div class="col-7 badge badge-pill d-flex justify-content-end">
+								  		<i class="fas fa-trophy"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  	</div>
+							  	</div>
+						  	</div> <!-- end tools and frameworks --> 
+
+							<div class="col-12 d-flex align-items-center justify-content-end">
+								<button id="btn-skills" type="button" class="btn btn-theme">Back</button>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-12 more-about d-flex d-lg-none justify-content-center align-items-center">
-						<!-- <button class="btn btn-more-about">
-							<a href="#about"><i class="fas fa-arrow-down"> More about me</i></a>
-						</button> -->
+				</section> <!-- end about -->
+
+				<section id="projects" class="row projects bg-theme3">
+					<div class="col-md-12">
+						<h2 class="text-theme-color-bold">Projects</h2>
 					</div>
-				</div>
-			</section> <!-- end banner -->
+					<div class="col-md-4 col-lg-3 project">
+						<div class="card">
+						  <img class="card-img-top" src="assets/images/ivfc-website.png" alt="ivfc website" />
+						  <div class="card-img-overlay">
+						    <h5 class="card-title text-theme-color-bold">iVolunteer for Filipino Children (iVFC)</h5>
+						    <hr/>
+						    <p class="card-text text-theme-color">A non-profit organization that help less privilege children to have a better future.</p>
+						    <a href="https://villadores-arjel.github.io/ivfc/" target="_blank" class="btn btn-theme">Visit Site</a>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-3 project">
+						<div class="card">
+						  <img class="card-img-top" src="assets/images/comming-soon.jpg" alt="website under const" />
+						  <div class="card-img-overlay">
+						    <h5 class="card-title text-theme-color-bold">Comming Soon</h5>
+						    <hr/>
+						    <p class="card-text text-theme-color">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <a href="#projects" class="btn btn-theme">Visit Site</a>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-3 project">
+						<div class="card">
+						  <img class="card-img-top" src="assets/images/comming-soon.jpg" alt="website under const" />
+						  <div class="card-img-overlay">
+						    <h5 class="card-title text-theme-color-bold">Comming Soon</h5>
+						    <hr/>
+						    <p class="card-text text-theme-color">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <a href="#projects" class="btn btn-theme">Visit Site</a>
+						  </div>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-3 project">
+						<div class="card">
+						  <img class="card-img-top" src="assets/images/comming-soon.jpg" alt="website under const" />
+						  <div class="card-img-overlay">
+						    <h5 class="card-title text-theme-color-bold">Comming Soon</h5>
+						    <hr/>
+						    <p class="card-text text-theme-color">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <a href="#projects" class="btn btn-theme">Visit Site</a>
+						  </div>
+						</div>
+					</div>
+				</section> <!-- end projects -->
 
-			<section id="about"  class="row bg-theme1">
-				<div class="col-md-12 about-intro text-theme-color2 bg-theme2">
-					<h2>About me</h2>
-					<p>
-						I'm an Engineer!!! I like to do stuff that challenge me, I like to develop things that makes our life easy -- that's when I decide to be a programmer/developer.
-					</p>
-					<p>
-						I can be a back-end dev or a front-end....or maybe a full-stack developer. I started as a java developer, then try to learn the web development - HTML, CSS, Javascript, PHP.
-					</p>
-				</div> <!-- end about me intro -->
-				<div class="col-md-12">
-			  		<div class="row skills-box d-flex flex-row justify-content-center text-theme-color1 bg-theme3">
-			  			<div class="skills-content skills-content-left col-lg-3">
-							<h2><i class="fas fa-code"></i></h2>
-							<h5>Programming Languages</h5>
-						  	<div class="row skill">
-							  	<div class="col-5"><h6>HTML</h6></div>
-							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  	</div>
-						  	</div>
-							<div class="row skill">
-							  	<div class="col-5"><h6>CSS</h6></div>
-							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  	</div>
-						  	</div>
-							<div class="row skill">
-							  	<div class="col-5"><h6>JAVASCRIPT</h6></div>
-							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  	</div>
-						  	</div>
-							<div class="row skill">
-							  	<div class="col-5"><h6>PHP</h6></div>
-							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  	</div>
-						  	</div>
-							<div class="row skill">
-							  	<div class="col-5"><h6>JAVA</h6></div>
-							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  	</div>
-						  	</div>
-						</div>
-						<div class="skills-content skills-content-center col-lg-3">
-							<h2><i class="fas fa-wrench"></i></h2>
-							<h5>IDE &amp; Version Control</h5>
-						  	<div class="row skill">
-							  	<div class="col-5"><h6>GIT</h6></div>
-							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  	</div>
-						  	</div>
-							<div class="row skill">
-							  	<div class="col-5"><h6>SUBLIME</h6></div>
-							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  	</div>
-						  	</div>
-							<div class="row skill">
-							  	<div class="col-5"><h6>ECLIPSE</h6></div>
-							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  	</div>
-						  	</div>
-						</div>
-						<div class="skills-content skills-content-right col-lg-3">
-							<h2><i class="fas fa-database"></i></h2>
-							<h5>Databases &amp; Frameworks</h5>
-						  	<div class="row skill">
-							  	<div class="col-5"><h6>BOOTSTRAP</h6></div>
-							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  	</div>
-						  	</div>
-							<div class="row skill">
-							  	<div class="col-5"><h6>LARAVEL</h6></div>
-							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  	</div>
-						  	</div>
-							<div class="row skill">
-							  	<div class="col-5"><h6>SPRING</h6></div>
-							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  	</div>
-						  	</div>
-							<div class="row skill">
-							  	<div class="col-5"><h6>SQL</h6></div>
-							  	<div class="col-7 badge badge-pill d-flex justify-content-end">
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  		<i class="fas fa-trophy text-light"></i>
-							  	</div>
-						  	</div>
-						</div>
-			  		</div>
-				</div> <!-- end skills -->
-			</section> <!-- end about -->
-
-			<section id="projects"  class="row projects">
-				<div class="col-md-12 d-flex justify-content-center align-items-center">
-					<h2 class="text-theme-color2 display-4">Projects</h2>
-				</div>
-				<div class="col-md-12">
-					<div class="row project-list text-theme-color2">
-						<div class="col-md-3 project bg-theme3 wow fadeInRight">
-							<a href="https://villadores-arjel.github.io/ivfc/" target="_blank"><img class="w-100" src="assets/images/ivfc-website.png" alt="ivfc website"></a>
-							<div class="project-desc text-theme-color1">
-								<h5><strong>iVolunteer for Filipino Children</strong></h5>
-								<hr/>
-								<p>A non-profit organization that help less privilege children to have a better future</p>
+				<footer id="contact" class="row bg-theme1">
+					<div class="col-lg-8 connect-form">
+						<h5>Send me a message</h5>
+						<form class="row">
+							<div class="form-group col-lg-6">
+							    <input type="text" class="form-control" id="name" placeholder="Enter your name" />
 							</div>
+						  	<div class="form-group col-lg-6">
+							    <input type="email" class="form-control" id="email" placeholder="Enter your email" />
+							    <small id="emailHelp" class="text-theme-color2">Your email will not be shared with anyone else.</small>
+						  	</div>
+						  	<div class="form-group col-lg-12">
+						    	<textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Enter your message"></textarea>
+						  	</div>
+						  	<div class="col-lg-12 d-flex justify-content-center">
+						    	<button type="submit" class="btn btn-theme">Submit</button>
+						  	</div>
+						</form>
+					</div>
+					<div class="col-lg-4 connect-links">
+						<h5>Check my social links</h5>
+						<div class="social-links d-flex flex-column">
+							<a href="https://gitlab.com/villadores.arjel" target="_blank"><i class="fab fa-gitlab fa-lg"></i> Gitlab</a>
+							<a href="https://github.com/villadores-arjel" target="_blank"><i class="fab fa-github fa-lg"></i> GitHub</i></a>
+							<a href="https://www.linkedin.com/in/arjel-villadores-892846160/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i> LinkedIn</a>
+							<a href="https://plus.google.com/108237561742287115667" target="_blank"><i class="fab fa-google-plus-g fa-lg"></i> Google+</a>
 						</div>
-
-						<div class="col-md-3 project bg-theme3 wow fadeInRight" data-wow-delay="1s">
-							<a href="#" target="_blank"><img class="w-100" src="http://via.placeholder.com/350x250" alt=""></a>
-							<div class="project-desc text-theme-color1">
-								<h5><strong>On Going project</strong></h5>
-								<hr/>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua.</p>
-							</div>
-						</div>
-					</div> <!-- end project list  -->
-				</div>	
-			</section> <!-- end projects -->
-
-			<footer id="footer" class="bg-theme1 row">
-				<div class="col-md-12 social-links">
-					<a href="https://gitlab.com/villadores.arjel" target="_blank"><i class="fab fa-gitlab text-orange"></i></a>
-					<a href="https://github.com/villadores-arjel" target="_blank"><i class="fab fa-github text-secondary"></i></a>
-					<a href="mailto:villadores.arjel@gmail.com" target="_blank"><i class="fab fa-google-plus-g fa-lg text-danger"></i> </a>
-					<a href="https://www.facebook.com/jell.transport.9" target="_blank"><i class="fab fa-facebook-square text-primary"></i></a>
-					<a href="https://www.linkedin.com/in/arjel-villadores-892846160/" target="_blank"><i class="fab fa-linkedin-in text-primary"></i></a>
-				</div>
-				<div id="copyright" class="col-md-12 d-flex flex-column justify-content-center align-items-center">
-					<small>Copyright &copy; 2018 | Arjel Villadores</small>
-				</div>
-			</footer> <!-- end footer -->
+						<hr/>
+						<h6>Check out my resume</h6>
+						<a href="#contact" target="_blank" class="btn btn-theme">View Resume</a>
+					</div>
+					<div class="col-12 copyright bg-theme3">
+						<small class="text-theme-color-bold">Copyright &copy; 2018 | Arjel Villadores</small>
+					</div>
+				</footer> <!-- end footer -->
+			</div>
+			
 
 		</main> <!-- end main -->
 
@@ -294,13 +355,33 @@
 
 	    <!-- spy scroll -->
 	    <script>
-	    	$('body').scrollspy({ target: '#navbar' });
+	    	$('body').scrollspy({ target: '#navbarNav' });
+	    	$('body').scrollspy({ target: '#navbarSide' });
 	    </script>
 
-	    <script type="text/javascript" src="assets/js/wow.js"></script>
-	    <script>
-	      	new WOW().init();
-	    </script>
+	    <script type="text/javascript">
+            $(document).ready(function () {
+                $('#close-sidebar, #side-nav-overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                    $('#side-nav-overlay').removeClass('active');
+                });
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').addClass('active');
+                    $('#side-nav-overlay').addClass('active');
+                });
+            
+                $('#btn-about').on('click', function(){
+                	$('#about-intro').css("display", "none");
+                	$('#skills').css("display", "flex");
+                });
+
+                $('#btn-skills').on('click', function(){
+                	$('#about-intro').css("display", "block");
+                	$('#skills').css("display", "none");
+                });
+            });
+        </script>
 
 	</body>
 </html>
