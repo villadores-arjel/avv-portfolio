@@ -164,6 +164,12 @@ hr
 	margin: 2% 0;
 }
 
+.project .card
+{
+	background-color: transparent !important;
+	border: none;
+}
+
 .project .card .card-img-top
 {
 	height: 275px;
@@ -233,6 +239,12 @@ hr
 {
 	width: 25px;
 	height: 30px;
+}
+
+.modal .modal-content
+{
+	background: radial-gradient(circle, rgb(247, 242, 242), rgb(226, 226, 226), #c6c4c6);
+	border-radius: 15px;
 }
 
 /* ---------------------------------------------------
