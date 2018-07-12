@@ -253,46 +253,35 @@
 					<div class="col-md-12">
 						<h2 class="text-theme-color-bold">Projects</h2>
 					</div>
-					<div class="col-md-4 col-lg-3 project">
+					<div class="col-md-4 project">
 						<div class="card">
 						  <img class="card-img-top" src="assets/images/ivfc-website.png" alt="ivfc website" />
 						  <div class="card-img-overlay">
 						    <h5 class="card-title text-theme-color-bold">iVolunteer for Filipino Children (iVFC)</h5>
 						    <hr/>
-						    <p class="card-text text-theme-color">A non-profit organization that help less privilege children to have a better future.</p>
+						    <p class="card-text text-theme-color">A non-profit organization that help less privilege children to have a better future. This website is a static website created using HTML5, CSS3 and Bootstrap</p>
 						    <a href="https://villadores-arjel.github.io/ivfc/" target="_blank" class="btn btn-theme">Visit Site</a>
 						  </div>
 						</div>
 					</div>
-					<div class="col-md-4 col-lg-3 project">
+					<div class="col-md-4 project">
 						<div class="card">
-						  <img class="card-img-top" src="assets/images/comming-soon.jpg" alt="website under const" />
+						  <img class="card-img-top" src="assets/images/bnlshop-website.png" alt="website under const" />
 						  <div class="card-img-overlay">
-						    <h5 class="card-title text-theme-color-bold">Comming Soon</h5>
+						    <h5 class="card-title text-theme-color-bold">BNL Shop</h5>
 						    <hr/>
-						    <p class="card-text text-theme-color">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						    <a href="#projects" class="btn btn-theme">Visit Site</a>
+						    <p class="card-text text-theme-color">An e-commerce website for baby's dress, shoes, toys and other baby's need. Also offer product for mommy's choice. This website is a dynamic website created using HTML5, CSS3 and Bootstrap for frontend design and JQuery and PHP for the backend process.</p>
+						    <a href="https://bnlshop.000webhostapp.com/" target="_blank" class="btn btn-theme">Visit Site</a>
 						  </div>
 						</div>
 					</div>
-					<div class="col-md-4 col-lg-3 project">
+					<div class="col-md-4 project">
 						<div class="card">
 						  <img class="card-img-top" src="assets/images/comming-soon.jpg" alt="website under const" />
 						  <div class="card-img-overlay">
 						    <h5 class="card-title text-theme-color-bold">Comming Soon</h5>
 						    <hr/>
-						    <p class="card-text text-theme-color">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						    <a href="#projects" class="btn btn-theme">Visit Site</a>
-						  </div>
-						</div>
-					</div>
-					<div class="col-md-4 col-lg-3 project">
-						<div class="card">
-						  <img class="card-img-top" src="assets/images/comming-soon.jpg" alt="website under const" />
-						  <div class="card-img-overlay">
-						    <h5 class="card-title text-theme-color-bold">Comming Soon</h5>
-						    <hr/>
-						    <p class="card-text text-theme-color">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <p class="card-text text-theme-color">Blog site for newbie parents that contains do's and don'ts on parenting also contain doctor's advices. This website showcase my skills using the laravel frameworks</p>
 						    <a href="#projects" class="btn btn-theme">Visit Site</a>
 						  </div>
 						</div>
@@ -314,7 +303,7 @@
 						    	<textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Enter your message"></textarea>
 						  	</div>
 						  	<div class="col-lg-12 d-flex justify-content-center">
-						    	<button type="submit" class="btn btn-theme">Submit</button>
+						    	<button data-toggle="modal" data-target="#msg-confirm" type="submit" class="btn btn-theme">Submit</button>
 						  	</div>
 						</form>
 					</div>
@@ -328,7 +317,7 @@
 						</div>
 						<hr/>
 						<h6>Check out my resume</h6>
-						<a href="#contact" target="_blank" class="btn btn-theme">View Resume</a>
+						<a href="https://drive.google.com/file/d/1dUDGAIDnAH2Ayi6XjFuq_m9OtLPwvsxH/view?usp=sharing" target="_blank" class="btn btn-theme">View Resume</a>
 					</div>
 					<div class="col-12 copyright bg-theme3">
 						<small class="text-theme-color-bold">Copyright &copy; 2018 | Arjel Villadores</small>
@@ -336,11 +325,26 @@
 				</footer> <!-- end footer -->
 			</div>
 			
-
+			<div class="modal fade" id="msg-confirm" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							 <h6 class = "text-theme-color"><i class="far fa-check-circle"></i> Message sent</h6>
+							 <a href="#contact" class="modal-close" data-dismiss="modal">
+								<i class="far fa-window-close" data-toggle="tooltip" data-placement="left" title="Close"></i>
+							 </a>
+						</div>
+						<div class="modal-body">
+							 <h6 class = "text-theme-color">Thank you for messaging me. I will get back to you as soon as I can. For any urgent concern, you can contact me at 09151240243</h6>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main> <!-- end main -->
 
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	 	<!-- jquery cdn -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
@@ -380,6 +384,12 @@
                 	$('#about-intro').css("display", "block");
                 	$('#skills').css("display", "none");
                 });
+
+                $('footer form').on("click","button",function()
+                {
+                	$('footer form input, footer form textarea').val("");
+                });
+
             });
         </script>
 
