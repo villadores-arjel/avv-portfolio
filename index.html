@@ -631,7 +631,7 @@
 								  	</div>
 								  	<div class="col-7 badge badge-pill d-flex justify-content-end">
 								  		<i class="fas fa-trophy"></i>
-								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy"></i>
 								  		<i class="fas fa-trophy text-theme-color2"></i>
 								  		<i class="fas fa-trophy text-theme-color2"></i>
 								  		<i class="fas fa-trophy text-theme-color2"></i>
@@ -697,7 +697,7 @@
 					</div>
 				</section> <!-- end projects -->
 
-				<footer id="contact" class="row bg-theme1">
+				<footer id="contact" class="row bg-theme1 d-flex align-items-center">
 					<div class="col-lg-8 connect-form">
 						<h5>Send me a message</h5>
 						<div class="row send-msg">
@@ -775,12 +775,15 @@
 	    </script>
 
 	    <script type="text/javascript">
-	    	var homeOrigPos = 0;
-	    	var aboutOrigPos = 0;
-	    	var projectsOrigPos = 0;
-	    	var contactOrigPos = 0;
-
             $(document).ready(function () {
+            	var homeOrigPos = 0;
+	    		var aboutOrigPos = 0;
+	    		var projectsOrigPos = 0;
+	    		var contactOrigPos = 0;
+	    		showContent();
+            	setContentPosition();
+
+
                 $('#close-sidebar, #side-nav-overlay').on('click', function () {
                     $('#sidebar').removeClass('active');
                     $('#side-nav-overlay').removeClass('active');
@@ -809,23 +812,15 @@
 
                 $('.portfolio-intro').click(function ()
                 {
-                	$(this).fadeOut("slow");
-                	$('main').fadeIn("slow");
-                	var homeOrigPos1 = $('#home').offset();
-                	homeOrigPos = homeOrigPos1.top;
-	    			var aboutOrigPos1 = $('#about').offset();
-	    			aboutOrigPos = aboutOrigPos1.top;
-	    			var projectsOrigPos1 = $('#projects').offset();
-	    			projectsOrigPos = projectsOrigPos1.top;
-	    			var contactOrigPos1 = $('#contact').offset();
-	    			contactOrigPos = contactOrigPos1.top;
+                	showContent()
+                	setContentPosition()
 	            });
 
                 $('.portfolio-intro').keypress(function(e) {
 				    if(e.which == 13) 
 				    {
-				       $(this).fadeOut("slow");
-                	   $('main').fadeIn("slow");
+				       showContent()
+                	   setContentPosition()
 				    }
 				});
 
@@ -849,6 +844,24 @@
 				{
 					$("html, body").animate({ scrollTop: (projectsOrigPos) }, 1000);
 				});
+
+				function showContent()
+				{
+					$('.portfolio-intro').fadeOut("slow");
+                	$('main').fadeIn("slow");
+				}
+
+				function setContentPosition()
+				{
+					var homeOrigPos1 = $('#home').offset();
+                	homeOrigPos = homeOrigPos1.top;
+	    			var aboutOrigPos1 = $('#about').offset();
+	    			aboutOrigPos = aboutOrigPos1.top;
+	    			var projectsOrigPos1 = $('#projects').offset();
+	    			projectsOrigPos = projectsOrigPos1.top;
+	    			var contactOrigPos1 = $('#contact').offset();
+	    			contactOrigPos = contactOrigPos1.top;
+				}
 
             });
         </script>

@@ -152,7 +152,7 @@ hr
 	left: 0;
 	display: none;
 	text-align: center;
-	padding: 3% 10px;
+	padding: 4% 10px;
 }
 
 .skill-set
@@ -364,6 +364,11 @@ main
 		z-index: 100;
 	}
 
+  .about-intro
+  {
+    padding-top: 15%;
+  }
+
 	.projects
 	{
 		z-index: 150;
@@ -371,9 +376,16 @@ main
 
 	footer
 	{
+    position: relative;
 		height: 95vh;
 		z-index: 200;
 	}
+
+  .copyright
+  {
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 
