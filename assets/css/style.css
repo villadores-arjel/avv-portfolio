@@ -153,6 +153,7 @@ hr
 	display: none;
 	text-align: center;
 	padding: 4% 10px;
+  margin: 0;
 }
 
 .skill-set
@@ -195,9 +196,26 @@ hr
 .project .card .card-img-overlay
 {
 	transition: .5s ease;
-  	opacity: 0;
-  	background: radial-gradient(circle, rgb(252, 252, 252), rgb(226, 226, 226), #c6c4c6);
-  	overflow-y: scroll;
+	opacity: 0;
+	background: radial-gradient(circle, rgb(252, 252, 252), rgb(226, 226, 226), #c6c4c6);
+	overflow-y: scroll;
+}
+
+.project .card .card-img-overlay::-webkit-scrollbar 
+{ 
+    width: 4px;
+    background-color: #fff;
+}
+
+.project .card .card-img-overlay::-webkit-scrollbar-track 
+{
+    background-color: #fff; 
+}
+
+.project .card .card-img-overlay::-webkit-scrollbar-thumb 
+{
+    border-radius: 20px;
+    background-color: rgba(132, 81, 104, 0.5);
 }
 
 .project .card .card-img-top:hover
@@ -260,7 +278,7 @@ hr
 	border-radius: 15px;
 }
 
-main
+.main
 {
 	display: none;
 }
