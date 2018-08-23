@@ -122,18 +122,41 @@ hr
 	text-align: center;
 }
 
+.about>div
+{
+  position: relative;
+}
+
 .avatar
 {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	margin: 15%;
+	margin: 15% 15% 2px;
+}
+
+.contact-info
+{
+  text-align: center;
+  color: #f9f9f9;
+}
+
+.contact-info a,
+.more-contact-info a
+{
+  text-decoration: none;
+  color: #f9f9f9;
+}
+
+.more-contact-info
+{
+  margin-bottom: 5px;
 }
 
 .intro-skills-container
 {
 	position: relative;
-	min-height: 600px;
+	min-height: 685px;
 }
 
 .about-intro
@@ -233,6 +256,11 @@ hr
 	padding: 2%;
 	text-align: center;
 	color: #f9f9f9;
+}
+
+.send-msg
+{
+  margin: 0 !important;
 }
 
 /*override form control box shadow*/
@@ -343,6 +371,21 @@ hr
 	}
 }
 
+@media (min-width: 768px)
+{
+  .more-contact-info
+  {
+    position: absolute;
+    bottom: 20px;
+  }
+
+  .about-intro,
+  .skills
+  {
+    padding-top: 50px;
+  }
+}
+
 /*hide side navbar on large devices even active*/
 @media (min-width: 992px)
 {
@@ -382,11 +425,6 @@ hr
 		z-index: 100;
 	}
 
-  .about-intro
-  {
-    padding-top: 15%;
-  }
-
 	.projects
 	{
 		z-index: 150;
@@ -403,6 +441,21 @@ hr
   {
     position: absolute;
     bottom: 0;
+  }
+
+  .more-contact-info
+  {
+    position: absolute;
+    bottom: 100px;
+  }
+}
+
+@media (min-height: 768px) and (min-width: 1200px)
+{
+  .about-intro,
+  .skills
+  {
+    padding-top: 12%;
   }
 }
 
