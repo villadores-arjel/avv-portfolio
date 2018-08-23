@@ -488,18 +488,35 @@
 				</header> <!-- end header -->
 
 				<section id="about" class="row about">
-					<div class="col-md-4 bg-theme1 d-flex flex-column align-items-center justify-content-center">
+					<div class="col-md-4 bg-theme1 d-flex flex-column align-items-center pt-4">
 						<img class="avatar" src="assets/images/avatar-pic.jpg" alt="my picture">
+						<p class="text-light text-center"><small>
+								&ldquo;Our capability has a limit. But our WILLINGNESS is infinite&rdquo;
+						</small></p>
+						<div class="contact-info mt-4 mb-2">
+							<h5>Get in touch with me:</h5>
+							<h6><i class="fas fa-mobile-alt"></i> +63-9151240243</h6>
+							<h6><i class="far fa-envelope"></i> <a href="mailto:arjelvilladores@yahoo.com" target="_top">arjelvilladores@yahoo.com</a> | <a href="mailto:villadores.arjel@gmail.com" target="_top">villadores.arjel@gmail.com</a></h6>
+						</div>
+						<div id="more-contact" class="more-contact-info">
+							<a href="#contact"><u>See more options to contact me</u></a>
+						</div>
 					</div>
 
 					<div class="col-md-8 bg-theme2 intro-skills-container">
 						<div id="about-intro" class="about-intro">
 							<h2 class="text-theme-color-bold">About Me</h2>
 							<p class="text-theme-color">
-								 I started as a JAVA developer. But my passion in developing websites lead me to become a full-stack developer specialized in HTML, CSS, JAVASCRIPT and PHP. I also had knowledge in SQL (Oracle and MySql), JAVA web services, UNIX and LINUX command. I also had background on different frameworks such as JQuery, Bootstrap, Laravel and Spring.
+								 I'am an Engineer, a critical thinker, a solution finder but I'm no longer single hahaha....Kidding aside, I like to do stuff that challenge me and I like to develop things that makes our life easy.
 							</p>
 							<p class="text-theme-color">
-								 I really like to do stuff that challenge me and I like to develop things that makes our life easy. Know more about my skill-set, click the button below or just scroll down to view my projects.
+								 I been in the IT industry for more than five(5) years, although I graduated as an ECE, my passion in developing software and websites lead me to become an IT professional.
+							</p>
+							<p class="text-theme-color">
+								 I started as a Java developer, then I equip my self with tools and technologies on web development. And now, I'am a full stack web developer working both front-end and back-end development of a responsive, dynamic and progressive website.
+							</p>
+							<p class="text-theme-color">
+								  I am specialized in HTML, CSS, Javascript, Java and PHP. Know more about my skill-set, click the button below or just scroll down to view my projects.
 							</p>
 							<div class="d-flex align-items-center justify-content-end">
 								<button id="btn-about" type="button" class="btn btn-theme">View my skills</button>
@@ -608,7 +625,7 @@
 								  	<div class="col-7 badge badge-pill d-flex justify-content-end">
 								  		<i class="fas fa-trophy"></i>
 								  		<i class="fas fa-trophy"></i>
-								  		<i class="fas fa-trophy text-theme-color2"></i>
+								  		<i class="fas fa-trophy"></i>
 								  		<i class="fas fa-trophy text-theme-color2"></i>
 								  		<i class="fas fa-trophy text-theme-color2"></i>
 								  	</div>
@@ -698,7 +715,7 @@
 				</section> <!-- end projects -->
 
 				<footer id="contact" class="row bg-theme1 d-flex align-items-center">
-					<div class="col-lg-8 connect-form">
+					<div class="col-12 col-lg-8 connect-form">
 						<h5>Send me a message</h5>
 						<div class="row send-msg">
 							<div class="form-group col-lg-6">
@@ -709,14 +726,14 @@
 							    <small id="emailHelp" class="text-theme-color2">Your email will not be shared with anyone else.</small>
 						  	</div>
 						  	<div class="form-group col-lg-12">
-						    	<textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Enter your message"></textarea>
+						    	<textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
 						  	</div>
 						  	<div class="col-lg-12 d-flex justify-content-center">
-						    	<button id="send-msg-btn" data-toggle="modal" data-target="#msg-confirm" type="button" class="btn btn-theme">Submit</button>
+						    	<button id="send-msg-btn" type="button" class="btn btn-theme">Submit</button>
 						  	</div>
 						</div>
 					</div>
-					<div class="col-lg-4 connect-links">
+					<div class="col-12 col-lg-4 connect-links">
 						<h5>Check my social links</h5>
 						<div class="social-links d-flex flex-column">
 							<a href="https://gitlab.com/villadores.arjel" target="_blank"><i class="fab fa-gitlab fa-lg"></i> Gitlab</a>
@@ -726,7 +743,7 @@
 						</div>
 						<hr/>
 						<h6>Check out my resume</h6>
-						<a href="https://drive.google.com/file/d/1dUDGAIDnAH2Ayi6XjFuq_m9OtLPwvsxH/view?usp=sharing" target="_blank" class="btn btn-theme">View Resume</a>
+						<a href="https://drive.google.com/file/d/1IQGcfHDpksU2efKOuaBtsFDIiBg58hXZ/view?usp=sharing" target="_blank" class="btn btn-theme">View Resume</a>
 					</div>
 					<div class="col-12 copyright bg-theme3">
 						<small class="text-theme-color-bold">Copyright &copy; 2018 | Arjel Villadores</small>
@@ -805,10 +822,35 @@
                 	$('#about-intro').fadeIn("slow");
                 });
 
-                $('footer .send-msg').on("click","button",function()
-                {
-                	$('footer .send-msg input, footer .send-msg textarea').val("");
-                });
+               	$('#send-msg-btn').click(function()
+               	{
+               		let name = $('#name').val();
+               		let email = $('#email').val();
+               		let message = $('#message').val();
+               		sendMessage(name, email, message);
+               		$('#msg-confirm').modal("show");
+              		$('#name').val("");
+               		$('#email').val("");
+               		$('#message').val("");
+               	});
+
+               	function sendMessage(name, email, message)
+               	{
+         			 $.ajax({
+				      'type': 'POST',
+				      'url': 'https://postmail.invotes.com/send',
+				      'data': { 
+	               			"access_token": "61x3nnh67g1smf5332mqxzyp",
+	               			"text": message,
+	               			// "name": name,
+	               			// "email": email
+	               		}
+				     }).done(function(response) {
+				       console.log(response);
+				     });
+
+			        return false;
+               	}
 
                 $('.portfolio-intro').click(function ()
                 {
@@ -840,7 +882,7 @@
 					$("html, body").animate({ scrollTop: (aboutOrigPos) }, 1000);
 				});
 
-				$("#contactLink").click(function()
+				$("#contactLink, #more-contact").click(function()
 				{
 					$("html, body").animate({ scrollTop: (projectsOrigPos) }, 1000);
 				});
